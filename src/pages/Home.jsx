@@ -20,6 +20,7 @@ import InstagramGallery from "../layouts/Gallery";
 import FloatingHomeIcon from "../layouts/Follting";
 import AboutSection from "../layouts/AboutSection"; 
 import AnnouncementBanner from "../layouts/AnnouncementBanner";
+import Gallery from "../components/Photo";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -272,6 +273,7 @@ export default function Home() {
         <AboutSection/>
         <CoursesPage />
         <AboutUsSection/>
+        <Gallery/>
         <BannerWithAnimation/>
          <Testimonials />
          <InstagramGallery/>

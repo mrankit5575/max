@@ -4,7 +4,7 @@ import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/ap
 const LocationMap = () => {
   const center = {
     lat: 28.7041, // Delhi coordinates
-    lng: 77.1025
+    lng: 77.1025,
   };
 
   const mapStyles = {
@@ -14,7 +14,7 @@ const LocationMap = () => {
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)"
   };
 
-  const [selectedMarker, setSelectedMarker] = useState(null);
+  const [selectedMarker, setSelectedMarker] = useState(false);
   const [map, setMap] = useState(null);
 
   const onMarkerClick = () => {
@@ -22,7 +22,7 @@ const LocationMap = () => {
   };
 
   const onInfoWindowClose = () => {
-    setSelectedMarker(null);
+    setSelectedMarker(false);
   };
 
   const onLoad = useCallback((map) => {
@@ -34,12 +34,13 @@ const LocationMap = () => {
   }, []);
 
   return (
-    <section className="py-16 px-0 bg-white hidden md:block">
-      <div className="w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 px-4">
+    <section className="py-16 px-4 bg-white min-h-[600px]">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
           Find Us on the Map
         </h2>
-        <LoadScript googleMapsApiKey="AIzaSyCo7fTRrQz-IuORjiYqbvVroGK6M9IQJkw">
+
+        <LoadScript googleMapsApiKey="AIzaSyBuQ4BlJPSkQhn6TMY247SgacvZDDoDJC8">
           <GoogleMap
             mapContainerStyle={mapStyles}
             zoom={15}
@@ -70,7 +71,7 @@ const LocationMap = () => {
                 position={center}
                 onCloseClick={onInfoWindowClose}
               >
-                <div className="p-2">
+                <div className="p-2 max-w-[240px]">
                   <h3 className="font-bold text-lg mb-1">MAX Education</h3>
                   <p className="text-gray-600">Gali No. 1, Radha Vihar</p>
                   <p className="text-gray-600">Mukund Vihar, Main Market</p>
@@ -89,7 +90,8 @@ const LocationMap = () => {
             )}
           </GoogleMap>
         </LoadScript>
-        <p className="mt-4 text-gray-600 px-4">
+
+        <p className="mt-4 text-gray-600">
           Click on the marker to see our address and get directions.
         </p>
       </div>
@@ -97,4 +99,4 @@ const LocationMap = () => {
   );
 };
 
-export default LocationMap; 
+export default LocationMap;

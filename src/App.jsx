@@ -12,6 +12,7 @@ import CourseDetails from './pages/CourseDetails';
 import ParticleAnimation from './pages/ParticleAnimation';
 import LocationMap from './components/LocationMap';
 import LoginForm from './pages/Login';
+import Gallery from './components/Photo';
    
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <Route path="/contact" element={<Contact/>} />
             <Route path="/services" element={<Contact />} />
             <Route path="/login" element={<LoginForm/>} />
+            <Route path="/photo" element={<Gallery/>} />
             {/* <Route path="/tutor" element={<TutorCard/>} /> */}
           </Routes>
         </main>

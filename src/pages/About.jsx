@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiPlayCircle, FiX } from 'react-icons/fi';
           //  import { FiPlayCircle } from "react-icons/fi";
 
-const mainImage = "/web.webp";
-const videoThumbnail = "/web.webp";
+const mainImage = "/img21.jpg";
+const videoThumbnail = "/img20.jpg";
 const videoSrc = "/video.mp4";
 
 const AboutUsSection = () => {

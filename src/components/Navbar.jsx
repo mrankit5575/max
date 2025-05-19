@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6 items-center">
             <Link to="/" className="text-white hover:text-red-500 transition-colors">Home</Link>
-            <Link to="/tutor" className="text-white hover:text-red-500 transition-colors">Find Tutors</Link>
+            <Link to="/photo" className="text-white hover:text-red-500 transition-colors">Gallery</Link>
             {/* Courses Dropdown */}
             <div className="relative group">
               <button
