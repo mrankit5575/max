@@ -66,6 +66,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link to="/contact" className="text-white hover:text-red-500 transition-colors">Contact</Link>
+            <Link to="/login" className="text-white hover:text-red-500 transition-colors">Login</Link>
           </div>
 
           {/* Mobile Menu Button */}

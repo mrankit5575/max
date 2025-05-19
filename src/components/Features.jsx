@@ -127,10 +127,10 @@ export default function Features() {
       return "We offer a variety of courses including Computer Science, Programming, Web Development, and more.";
     }
     if (m.includes("location") || m.includes("address")) {
-      return "We are located in Burari, Delhi. Check our Contact page for the exact address.";
+      return "Gali no-1 Radha vihar Main Market Near Machhali Market Mukund pur Delhi 110042";
     }
     if (m.includes("contact") || m.includes("phone") || m.includes("email")) {
-      return "You can contact us at +91 9876543210 or info@example.com.";
+      return "You can contact us at +91 9220958292 or +91 9315322573  or info@example.com.";
     }
     if (m.includes("teacher") || m.includes("tutor") || m.includes("faculty")) {
       return "Our teachers are certified, experienced, and passionate about teaching!";

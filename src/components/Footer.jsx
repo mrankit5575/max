@@ -12,7 +12,7 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Contact</h3>
-          <p>📞 +91-9876543210</p>
+          <p>📞 +91-9220958292 or +91-9315322573</p>
           <p>✉️ support@yourwebsite.com</p>
           <p>📍 New Delhi, India</p>
         </div>

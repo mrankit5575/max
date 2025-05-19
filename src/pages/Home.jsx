@@ -4,7 +4,7 @@ import Counter from "../components/Counter";
 import img from "../assets/img2.jpg";
 import { Link } from "react-router-dom";
 import Features from "../components/Features";
-import Categories from "../components/Categories";
+// import Categories from "../components/Categories"; ;last edit 2025`
 import Testimonials from "../components/Testimonials";
 import BecomeATutor from "../components/BecomeATutor";
 import Support from "../components/Support";
@@ -18,13 +18,14 @@ import AboutUsSection from "./About";
 import BannerWithAnimation from "../layouts/BannerWithAnimation ";
 import InstagramGallery from "../layouts/Gallery";
 import FloatingHomeIcon from "../layouts/Follting";
-import AboutSection from "../layouts/AboutSection";
-// import ChatBot from "../layouts/ChetBoat";
+import AboutSection from "../layouts/AboutSection"; 
+import AnnouncementBanner from "../layouts/AnnouncementBanner";
+ // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
-  "Personalized tutoring by expert educators.",
-  "Unlock your potential with curated programs.",
-  "Join us to achieve academic success."
+    "Personalized tutoring by expert educators.",
+    "Unlock your potential with curated programs.",
+    "Join us to achieve academic success."
 ];
 
 export default function Home() {
@@ -89,10 +90,11 @@ export default function Home() {
         {/* <ParticleAnimation/> */}
         <section className="py-8 px-4 sm:px-6 lg:px-8">
 
+              <AnnouncementBanner/>
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-20">
               {/* Text Section - Mobile sequence */}
-              <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+               <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
                 {/* 20+ Years Experience - Step 1 */}
                 <AnimatePresence>
                   {(animationStep >= 0 || window.innerWidth > 768) && (
