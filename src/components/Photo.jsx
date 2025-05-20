@@ -38,7 +38,7 @@ const Gallery = () => {
         transition={{ duration: 0.5 }}
         className="text-3xl font-bold text-center mb-12 text-gray-800"
       >
-        Our Gallery
+        Max Education Gallery
       </motion.h2>
 
       {/* Triangle style for first 4 images */}

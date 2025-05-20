@@ -1,20 +1,14 @@
 import { useEffect, useRef, useState } from "react";
-import Tutors from "./Tutors";
-import Counter from "../components/Counter";
+ import Counter from "../components/Counter";
 import img from "../assets/img2.jpg";
 import { Link } from "react-router-dom";
 import Features from "../components/Features";
 // import Categories from "../components/Categories"; ;last edit 2025`
 import Testimonials from "../components/Testimonials";
-import BecomeATutor from "../components/BecomeATutor";
-import Support from "../components/Support";
-import FounderSection from "../components/FounderSection";
-import ForParentsSection from "../components/ForParentsSection";
-import { motion, AnimatePresence } from "framer-motion";
+ import { motion, AnimatePresence } from "framer-motion";
 import CoursesPage from "./CoursesPage";
 import FeatureCards from "./FeatureCards";
-import ParticleAnimation from "./ParticleAnimation";
-import AboutUsSection from "./About";
+ import AboutUsSection from "./About";
 import BannerWithAnimation from "../layouts/BannerWithAnimation ";
 import InstagramGallery from "../layouts/Gallery";
 import FloatingHomeIcon from "../layouts/Follting";
@@ -24,10 +18,10 @@ import Gallery from "../components/Photo";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
-    "Personalized tutoring by expert educators.",
-    "Unlock your potential with curated programs.",
-    "Join us to achieve academic success."
-];
+  "Learn computer skills, web development, digital marketing, Tally, and more — only at Max Education.",
+  "Max Education offers industry-ready computer courses with practical training and expert guidance.",
+  "Explore our wide range of computer courses designed to make you job-ready in today's digital world."
+ ];
 
 export default function Home() {
   const statsRef = useRef(null);
@@ -120,8 +114,8 @@ export default function Home() {
                       transition={{ duration: 0.8 }}
                       className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
                     >
-                      <span className="block">MAX Education</span>
-                      <span className="block text-red-500">Computer Institute</span>
+                      <span className="block">Master Your Skills with </span>
+                      <span className="block text-red-500 ">Max Education</span>
                     </motion.h1>
                   )}
                 </AnimatePresence>
@@ -229,7 +223,7 @@ export default function Home() {
                     className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start"
                     >
                       <Link
-                        to="/tutor"
+                        to="/courses"
                         className="bg-[#0C0950] hover:bg-blue-700 text-white px-6 py-2 sm:px-2 sm:py-3 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 font-medium text-sm sm:text-base"
                         >
                         Courses

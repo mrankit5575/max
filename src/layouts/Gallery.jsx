@@ -139,7 +139,10 @@ const InstagramGallery = () => {
                   }}
                 >
                   <FaInstagram style={styles.icon} />
-                  <span>@Max Education</span>
+                  <a href="https://www.instagram.com/maxknock949?igsh=MWtnenRjZXdmeTAxeg==" target="_blank" rel="noopener noreferrer" className="text-white ">
+  @Max Education
+</a>
+
                 </div>
               </div>
             );

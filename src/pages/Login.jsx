@@ -131,7 +131,7 @@ export default function Dashboard() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-[#0C0950] backdrop-blur-md rounded-xl shadow-2xl border border-white/20 p-8 w-full max-w-md"
         >
-          <h2 className="text-3xl font-bold text-center text-white mb-8">Admin Dashboard</h2>
+          <h2 className="text-3xl font-bold text-center text-white mb-8">Login</h2>
           
           <form onSubmit={handleLogin} className="space-y-6">
             <div>

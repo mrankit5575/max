@@ -34,7 +34,7 @@ const TopHeader = () => {
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-5 md:gap-8 mb-3 md:mb-0">
             <div className="flex items-center group">
               <FaPhoneAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
-              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">+91 9876543210</span>
+              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">+91 92209 58292</span>
             </div>
             <div className="flex items-center group">
               <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
@@ -52,7 +52,7 @@ const TopHeader = () => {
             <a href="#" className="text-white hover:text-gray-200 transition-colors transform hover:scale-125 text-lg">
               <FaFacebookF />
             </a>
-            <a href="#" className="text-white hover:text-gray-200 transition-colors transform hover:scale-125 text-lg">
+            <a href="https://www.instagram.com/maxknock949?igsh=MWtnenRjZXdmeTAxeg==" className="text-white hover:text-gray-200 transition-colors transform hover:scale-125 text-lg">
               <FaInstagram />
             </a>
             <a href="#" className="text-white hover:text-gray-200 transition-colors transform hover:scale-125 text-lg">

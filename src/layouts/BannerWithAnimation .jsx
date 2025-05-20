@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const BannerWithAnimation = () => {
   return (
     <div style={styles.container}>
@@ -9,7 +9,9 @@ const BannerWithAnimation = () => {
           <span style={styles.highlight}>Certificate</span> <br />
           Through MAX Education
         </h2>
+                    <Link to="/contact">
         <button style={styles.button}>Get started now →</button>
+                    </Link>
       </div>
       <div style={styles.imageContainer}>
         <img

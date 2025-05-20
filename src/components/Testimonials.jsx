@@ -1,41 +1,40 @@
-import React from "react";
+ import React from "react";
+import { Link } from "react-router-dom"; // Make sure this import is included
 
-// Testimonial data
 const testimonials = [
   {
     name: "Ayesha Khan",
     title: "Parent of Grade 10 Student",
     feedback:
       "The tutors are incredibly patient and knowledgeable. My son's confidence and grades have improved drastically!",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "/crop.png",
   },
   {
     name: "Rahul Mehta",
     title: "Engineering Student",
     feedback:
       "Excellent platform with great tutors. I passed my Calculus exam thanks to the detailed guidance I received.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/crop2.png",
   },
   {
-    name: "Sana Malik",
-    title: "IELTS Aspirant",
+    name: "Sana ",
+    title: "Telly Aspirant",
     feedback:
       "24/7 availability and verified experts made my prep stress-free. Highly recommend for test prep!",
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
-  },
+    image: "/crop1.png",
+  }
 ];
 
-// Testimonials component
 function Testimonials() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl mb-4">
-            Trusted by <span className="text-blue-600">Students & Parents</span>
+            Trusted by <span className="text-red-600">Students & Parents</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from those who've experienced our tutoring firsthand
+            “Success stories from our happy students and parents”
           </p>
         </div>
 
@@ -43,7 +42,7 @@ function Testimonials() {
           {testimonials.map((testimonial, idx) => (
             <div 
               key={idx} 
-              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full"
+              className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full transform hover:-translate-y-2"
             >
               <div className="flex-grow">
                 <p className="text-gray-700 text-lg italic mb-6">
@@ -51,24 +50,32 @@ function Testimonials() {
                 </p>
               </div>
               <div className="flex items-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover border-2 border-blue-100"
-                />
+                <div className="relative group">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="lg:w-20 lg:h-20 h-16 w-16 rounded-full object-cover border-4 border-blue-100 group-hover:border-blue-300 transition-all duration-300"
+                  />
+                  <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-blue-500 animate-ping opacity-0 group-hover:opacity-70 transition-all duration-300"></div>
+                </div>
                 <div className="ml-4">
-                  <h4 className="font-bold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-blue-600 text-sm">{testimonial.title}</p>
+                  <h4 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-red-500 text-sm">{testimonial.title}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
 
+        {/* Call to Action Button */}
         <div className="mt-16 text-center">
-          <button className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-md hover:shadow-lg">
-            Read More Success Stories
-          </button>
+          <Link to="/contact">
+            <button className="px-8 py-3 bg-[#0C0950] text-white font-medium rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105 active:scale-95">
+               Read More Success Stories
+            </button>
+          </Link>
         </div>
       </div>
     </section>

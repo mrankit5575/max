@@ -7,7 +7,13 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-2">About Us</h3>
           <p>We provide top-quality tutoring services to help students succeed academically.</p>
-        </div>
+          <p>
+            Developer 
+  <a href="https://www.instagram.com/viranshusingh055/" target="_blank" rel="noopener noreferrer" className="text-white  ml-5 hover:underline">
+    Viranshu Singh
+  </a>
+          </p>
+         </div>
 
         {/* Contact Info */}
         <div>

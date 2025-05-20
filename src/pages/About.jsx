@@ -5,7 +5,7 @@ import { FiPlayCircle, FiX } from 'react-icons/fi';
 
 const mainImage = "/img21.jpg";
 const videoThumbnail = "/img20.jpg";
-const videoSrc = "/video.mp4";
+// const videoSrc = "/video.mp4";
 
 const AboutUsSection = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
@@ -301,12 +301,12 @@ const AboutUsSection = () => {
               >
                 <FiX className="h-8 w-8" />
               </button>
-              <video
+              {/* <video
                 src={videoSrc}
                 controls
                 autoPlay
                 className="w-full rounded-lg"
-              />
+              /> */}
             </motion.div>
           </motion.div>
         )}
