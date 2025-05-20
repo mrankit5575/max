@@ -2,6 +2,10 @@
 
 A modern web application for MAX Education, a tutoring platform based in Delhi, India. This project provides a comprehensive solution for managing tutoring services, student information, and educational content.
 
+
+![image](https://github.com/user-attachments/assets/4c08bacb-66c4-4ed6-8e78-5e1e7efaa2eb)
+
+
 ## Features
 
 - Interactive Google Maps integration for location services
