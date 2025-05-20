@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
  import Counter from "../components/Counter";
-import img from "../assets/img2.jpg";
+import img from "../assets/hero3.jpg";
 import { Link } from "react-router-dom";
 import Features from "../components/Features";
 // import Categories from "../components/Categories"; ;last edit 2025`
@@ -174,16 +174,16 @@ export default function Home() {
 
               {/* Image Section - Only shown after text on mobile */}
               <motion.div 
-                className="w-full lg:w-1/2 flex justify-center relative mt-8 lg:mt-0"
+                className="w-full lg:w-1/2 flex justify-center relative mt-8 lg:mt-0  "
                 initial={{ opacity: window.innerWidth <= 768 ? 0 : 1 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: window.innerWidth <= 768 ? 1.5 : 0 }}
               >
-                <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full max-w-md group">
+                <div className="relative overflow-hidden rounded-2xl shadow-2xl w-full max-w-md  group lg:mt-0">
                   <img
                     src={img}
                     alt="Professional Tutor"
-                    className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full   object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-blue-600/10 rounded-2xl"></div>
                   
@@ -195,16 +195,16 @@ export default function Home() {
                 </div>
 
                 {/* Floating Badge */}
-                <div className="absolute -bottom-4 sm:-bottom-6 left-1/2 transform -translate-x-1/2 bg-white p-3 sm:p-4 rounded-xl shadow-lg hidden md:block w-56 sm:w-64">
+                <div className="absolute -bottom-4 sm:-bottom-6 left-1/2 transform -translate-x-1/2 bg-[#0C0950] p-3 sm:p-4 rounded-xl shadow-lg hidden md:block w-56 sm:w-64">
                   <div className="flex items-center gap-2 sm:gap-3">
-                    <div className="bg-blue-100 p-1 sm:p-2 rounded-full">
-                      <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="bg-white-100 p-1 sm:p-2 rounded-full">
+                      <svg className="w-5 h-5 sm:w-6 sm:h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
                     <div>
-                      <div className="font-bold text-gray-900 text-sm sm:text-base">Certified Tutors</div>
-                      <div className="text-gray-600 text-xs sm:text-sm">Verified professionals</div>
+                      <div className="font-bold text-white text-sm sm:text-base">Certified Tutors</div>
+                      <div className="text-white text-xs sm:text-sm">Verified professionals</div>
                     </div>
                   </div>
                 </div>

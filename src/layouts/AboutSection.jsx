@@ -102,7 +102,7 @@ export default function AboutSection() {
     </motion.div>
 
     {/* Text Content */}
-    <h3 className="font-bold text-xl text-white mb-1">Ankit Singh</h3>
+    <h3 className="font-bold text-xl text-white mb-1">RAVINDRA KUMAR</h3>
     <motion.p 
       className="text-center text-yellow-200 text-sm"
       animate={{
