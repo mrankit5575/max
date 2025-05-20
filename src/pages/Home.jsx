@@ -15,6 +15,7 @@ import FloatingHomeIcon from "../layouts/Follting";
 import AboutSection from "../layouts/AboutSection"; 
 import AnnouncementBanner from "../layouts/AnnouncementBanner";
 import Gallery from "../components/Photo";
+import Branches from "../layouts/Branches";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -267,6 +268,7 @@ export default function Home() {
         <AboutSection/>
         <CoursesPage />
         <AboutUsSection/>
+        <Branches/>
         <Gallery/>
         <BannerWithAnimation/>
          <Testimonials />

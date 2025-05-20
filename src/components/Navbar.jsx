@@ -29,7 +29,7 @@ const Navbar = () => {
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6 items-center">
             <Link to="/" className="text-white hover:text-red-500 transition-colors">Home</Link>
-            <Link to="/photo" className="text-white hover:text-red-500 transition-colors">Gallery</Link>
+            <Link to="/branches" className="text-white hover:text-red-500 transition-colors">Our Centers</Link>
             {/* Courses Dropdown */}
             <div className="relative group">
               <button
@@ -65,6 +65,8 @@ const Navbar = () => {
                 </ul>
               </div>
             </div>
+                        <Link to="/photo" className="text-white hover:text-red-500 transition-colors">Gallery</Link>
+
             <Link to="/contact" className="text-white hover:text-red-500 transition-colors">Contact</Link>
             <Link to="/login" className="text-white hover:text-red-500 transition-colors">Login</Link>
           </div>
