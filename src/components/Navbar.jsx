@@ -105,13 +105,19 @@ const Navbar = () => {
               <button onClick={() => setIsOpen(false)} className="text-[#0C2950] text-2xl focus:outline-none">&times;</button>
             </div>
             <div className="py-2 px-4 space-y-2">
-              <Link to="/" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Home</Link>
-              <Link to="/tutor" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Find Tutors</Link>
-              <Link to="/courses" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Courses</Link>
-              <Link to="/contact" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
-              <Link to="/about" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>About</Link>
-              <Link to="/login" className="block bg-[#0C2950] text-white px-4 py-2 rounded-md text-center hover:bg-[#1a3773] transition-colors font-medium" onClick={() => setIsOpen(false)}>Login</Link>
-            </div>
+  <Link to="/" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Home</Link>
+
+  <Link to="/courses" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Courses</Link>
+
+  <Link to="/photo" className="block px-3 py-2 rounded-md  hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Gallery</Link>
+  <Link to="/contact" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
+
+
+  <Link to="/about" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>About</Link>
+
+  <Link to="/login" className="block bg-[#0C2950] text-white px-4 py-2 rounded-md text-center hover:bg-[#1a3773] transition-colors font-medium" onClick={() => setIsOpen(false)}>Login</Link>
+</div>
+
           </div>
         </div>
       )}
