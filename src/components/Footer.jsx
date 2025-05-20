@@ -18,9 +18,12 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Contact</h3>
-          <p>📞 +91-9220958292 or +91-9315322573</p>
+          <p>
+  📞 <a href="tel:+919220958292">+91-9220958292</a> or <a href="tel:+919315322573">+91-9315322573</a>
+</p>
+
           <p>✉️ support@yourwebsite.com</p>
-          <p>📍 New Delhi, India</p>
+          <p>📍MukundPur New Delhi, India</p>
         </div>
 
         {/* Footer Links or Social (optional) */}

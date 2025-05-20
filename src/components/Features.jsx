@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 import think from '../assets/think.json'
 import { motion, AnimatePresence } from "framer-motion";
 // import FloatingShapes from "../layouts/FloatingShapes";
-
+//last edit hai ye  
 const features = [
   {
     title: "Affordable",
@@ -117,30 +117,150 @@ export default function Features() {
       if (msgDiv) msgDiv.scrollTop = msgDiv.scrollHeight;
     }
   }, [messages, isOpen]);
+function getBotReply(msg, context = {}) {
+  const m = msg.toLowerCase().trim();
+  const currentHour = new Date().getHours();
+  let greeting = "";
 
-  function getBotReply(msg) {
-    const m = msg.toLowerCase();
-    if (m.includes("fee") || m.includes("fees") || m.includes("price")) {
-      return "Our course fees vary by program. Please visit our Courses page or contact us for details.";
-    }
-    if (m.includes("course")) {
-      return "We offer a variety of courses including Computer Science, Programming, Web Development, and more.";
-    }
-    if (m.includes("location") || m.includes("address")) {
-      return "Gali no-1 Radha vihar Main Market Near Machhali Market Mukund pur Delhi 110042";
-    }
-    if (m.includes("contact") || m.includes("phone") || m.includes("email")) {
-      return "You can contact us at +91 9220958292 or +91 9315322573  or info@example.com.";
-    }
-    if (m.includes("teacher") || m.includes("tutor") || m.includes("faculty")) {
-      return "Our teachers are certified, experienced, and passionate about teaching!";
-    }
-    if (m.includes("hello") || m.includes("hi")) {
-      return "Hello! How can I assist you today?";
-    }
-    return "I'm here to help! You can ask me about fees, courses, location, contact, teachers, or anything else.";
+  // Determine time-based greeting
+  if (currentHour < 12) greeting = "Good morning";
+  else if (currentHour < 17) greeting = "Good afternoon";
+  else greeting = "Good evening";
+
+  // Track conversation context
+  if (!context.history) context.history = [];
+  context.history.push(m);
+
+  // Check for follow-up questions
+  const lastMessage = context.history.length > 1 ? context.history[context.history.length - 2] : "";
+  const isFollowUp = lastMessage.includes("fee") || lastMessage.includes("course") || lastMessage.includes("contact");
+
+  // Enhanced greeting detection
+  if (/(hello|hi|hey|greetings|sup|howdy|hola)\b|^good (morning|afternoon|evening)/i.test(m)) {
+    return `${greeting}! 👋 I'm the assistant for MAX EDUCATION Computer Institute. How may I help you today?`;
   }
 
+  // Farewell detection
+  if (/(bye|goodbye|see ya|thanks|thank you|exit|quit)/i.test(m)) {
+    return `Have a great day! 😊 Feel free to come back if you have more questions.`;
+  }
+
+  // Enhanced fee-related queries
+  if (/(fee|fees|price|cost|charges|payment|installment|afford)/i.test(m)) {
+  return `💬 Our course fees depend on the course, duration, and current offers.  
+Please visit our institute or call us at  +919220958292 +91 9220958292
+for the latest fee details.  
+You can also check our   for more info.`;
+}
+
+  // Enhanced course information
+  if (/(course|courses|class|classes|program|training|learn|study)/i.test(m)) {
+    if (isFollowUp && /(web|digital|basic|tally|dca|video|animation|photoshop)/i.test(m)) {
+      const course = m.match(/(web|digital|basic|tally|dca|video|animation|photoshop)/i)[0].toLowerCase();
+      const descriptions = {
+        web: "Our Web Development course covers HTML, CSS, JavaScript, React, and Node.js over    with hands-on projects.",
+        digital: "Digital Marketing includes SEO, SEM, Social Media Marketing, and Analytics in a  intensive program.",
+        basic: "Basic Computer course teaches fundamentals of operating systems, MS Office, and internet usage in  months.",
+        tally: "Tally Prime certification program covers accounting, inventory, and GST over  months.",
+        dca: "Diploma in Computer Applications (DCA) is a 1-year comprehensive program covering multiple IT skills.",
+        video: "Video Editing course teaches Premiere Pro, After Effects, and DaVinci Resolve in  months.",
+        animation: "Animation program covers 2D/3D animation using Maya and Blender over  months.",
+        photoshop: "Photoshop certification includes photo editing, digital painting, and graphic design fundamentals in months."
+      };
+      return `🎓 ${descriptions[course]} Would you like details about fees or duration?`;
+    }
+    return `🎓 We offer these courses:
+     Web Development, Digital Marketing, Basic Computer, Tally Prime/GST/Busy, DCA, Video Editing, Animation, Photoshop, AutoCAD, Graphic Design, ADCA, Advance Excel with MIS, Typing, CCC, Python, Web Design, SQL, Data Entry, Power BI, Machine Learning
+    \nWhich course would you like more information about?`;
+  }
+
+  // Enhanced location handling
+  if (/(location|address|where|map|directions|come|visit)/i.test(m)) {
+    return `📍 We are located at:
+     Gali no-11, Radha Vihar Main Market 
+    Near Machhali Market, Mukundpur
+    Delhi - 110042
+     \nOur center is open Monday-Saturday, 9AM to 6PM. Would you like help with directions?`;
+  }
+
+  // Enhanced contact information
+  if (/(contact|phone|call|email|reach|number|connect)/i.test(m)) {
+    return `📞  
+    - Phone:  +919220958292" +91 9220958292 +919315322573"> 
+     info@abccomputer.edu 
+      WhatsApp: +919220958292 +91 9220958292
+    \nOur support team is available 9AM-7PM daily. Would you like to schedule a callback?`;
+  }
+
+  // Enhanced faculty information
+  if (/(teacher|tutor|faculty|instructor|staff|professor)/i.test(m)) {
+    return `🧑‍🏫 Our faculty includes:
+    - Mr. Sharma (15+ years in Web Development)
+    - Ms. Kapoor (Digital Marketing expert)
+    - Mr. Singh (Tally certified trainer)
+    - Ms. Patel (Graphic Design specialist)
+    \nAll instructors are industry-certified with minimum 5 years teaching experience. Would you like to know about a specific instructor?`;
+  }
+
+  // Personal introduction handling
+  if (/(my name is|i am|i'm|meet|this is)\b/i.test(m)) {
+    const nameMatch = m.match(/(?:my name is|i am|i'm|meet|this is)\s+([a-z]+)/i);
+    const name = nameMatch ? nameMatch[1] : "there";
+    return `😊 Nice to meet you, ${name}! I'm here to help with information about MAX EDUCATION Computer Institute. What would you like to know?`;
+  }
+
+  // Enrollment process
+  if (/(join|enroll|admission|register|sign up|apply)/i.test(m)) {
+    return `📝 To enroll in any course:
+    1. Visit our center for counseling
+    2. Choose your course
+    3. Submit required documents
+    4. Complete fee payment
+    \nWe're currently accepting admissions for the next batch starting next month. Would you like me to check availability for a specific course?`;
+  }
+
+  // Batch timing information
+  if (/(time|timing|schedule|batch|when|morning|evening)/i.test(m)) {
+    return `⏰ We have multiple batch timings:
+    - Morning: 9AM to 12PM
+    - Afternoon: 1PM to 4PM
+    - Evening: 5PM to 7PM
+    \nNew batches start on the 1st and 15th of each month. Would you like to check availability for a specific timing?`;
+  }
+
+  // Course comparison
+  if (/(compare|difference|which one|between|better)/i.test(m)) {
+    return `🔍 To compare courses:
+    - Career-focused: Web Dev, Digital Marketing, Animation
+    - Short-term: Basic Computer, Photoshop
+    - Accounting: Tally Prime
+    - Comprehensive: DCA
+    \nTell me your career goals and I can suggest the best option for you.`;
+  }
+
+  // Job placement queries
+  if (/(job|placement|career|future|opportunity|scope)/i.test(m)) {
+    return `💼 We provide:
+    -  placement assistance
+    - Resume building workshops
+    - Interview preparation
+    - Industry partnerships
+    \nOur recent placement rate is 85% within 3 months of completion. Would you like to know which companies hire our students?`;
+  }
+
+  // Handle unknown queries with contextual help
+  const suggestions = [
+    "Ask about course fees",
+    "Learn about our programs",
+    "Get our location details",
+    "Contact information",
+    "Know about our faculty"
+  ];
+  
+  return `😒 I didn't quite understand that. I can help with:
+  - ${suggestions.join("\n  - ")}
+  \nWhat would you like to know?`;
+}
   function handleSend() {
     if (!input.trim()) return;
     setMessages((prev) => [...prev, { sender: "user", text: input }]);

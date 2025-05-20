@@ -34,11 +34,12 @@ const TopHeader = () => {
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-5 md:gap-8 mb-3 md:mb-0">
             <div className="flex items-center group">
               <FaPhoneAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
-              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">+91 92209 58292</span>
+              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">  <a href="tel:+919220958292">+91-9220958292</a>  </span>
             </div>
             <div className="flex items-center group">
-              <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
-              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">MukundPur, Delhi</span>
+              <a href='https://www.google.com/maps?q=28.48775,77.3191067' target='_blank'> <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
+</a>
+               <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">MukundPur, Delhi</span>
             </div>
             <div className="flex items-center group">
               <FaEnvelope className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
