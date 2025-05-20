@@ -21,9 +21,17 @@ export default function Footer() {
           <p>
   📞 <a href="tel:+919220958292">+91-9220958292</a> or <a href="tel:+919315322573">+91-9315322573</a>
 </p>
+<a href="mailto:maxknock90@gmail.com" className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">
+  📩   maxknock90@gmail.com
+</a>
 
-          <p>✉️ support@yourwebsite.com</p>
-          <p>📍MukundPur New Delhi, India</p>
+
+          <a
+          href="https://www.google.com/maps?q=28.7428794,77.1819009"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded overflow-hidden shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-105"
+        ><p>📍MukundPur New Delhi, India</p></a>  
         </div>
 
         {/* Footer Links or Social (optional) */}

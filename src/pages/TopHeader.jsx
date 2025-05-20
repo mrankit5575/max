@@ -37,14 +37,17 @@ const TopHeader = () => {
               <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">  <a href="tel:+919220958292">+91-9220958292</a>  </span>
             </div>
             <div className="flex items-center group">
-              <a href='https://www.google.com/maps?q=28.48775,77.3191067' target='_blank'> <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
+              <a href='https://www.google.com/maps?q=28.7428794,77.1819009' target='_blank'> <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
 </a>
                <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">MukundPur, Delhi</span>
             </div>
             <div className="flex items-center group">
               <FaEnvelope className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
-              <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">info@example.com</span>
-            </div>
+              <a href="mailto:maxknock90@gmail.com" className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">
+  maxknock90@gmail.com
+</a>
+
+             </div>
           </div>
 
           {/* Right Side - Larger icons and text */}

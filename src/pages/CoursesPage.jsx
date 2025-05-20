@@ -1,6 +1,8 @@
  import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
+const MotionLink = motion(Link);
 
 const courses = [
   {
@@ -147,19 +149,19 @@ const CoursesPage = () => {
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{course.title}</h3>
                   <p className="text-gray-600 mb-6 flex-grow">{course.description}</p>
                   
-                  <motion.a
-                    href={`/courses/${course.slug}`}
-                    className={`flex items-center font-medium text-white py-2 px-4 rounded-lg bg-gradient-to-r ${course.color} self-start`}
-                    whileHover={{ 
-                      x: 5,
-                      scale: 1.05
-                    }}
-                    whileTap={{ scale: 0.95 }}
-                    transition={{ type: "spring", stiffness: 400 }}
-                  >
-                    Explore Course
-                    <ArrowRightIcon className="w-4 h-4 ml-2" />
-                  </motion.a>
+                  <MotionLink
+  to={`/courses/${course.slug}`}
+  className={`flex items-center font-medium text-white py-2 px-4 rounded-lg bg-gradient-to-r ${course.color} self-start`}
+  whileHover={{ 
+    x: 5,
+    scale: 1.05
+  }}
+  whileTap={{ scale: 0.95 }}
+  transition={{ type: "spring", stiffness: 400 }}
+>
+  Explore Course
+  <ArrowRightIcon className="w-4 h-4 ml-2" />
+</MotionLink> 
                 </div>
               </motion.div>
             </motion.div>

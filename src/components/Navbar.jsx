@@ -23,7 +23,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md transition-all" aria-label="Home">
             <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4" />
-            <p className="text-white">MAX Education</p>
+            <p className="text-white">MAX EDUCATION</p>
           </Link>
 
           {/* Desktop Links */}
