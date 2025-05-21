@@ -1,6 +1,6 @@
  import { useState } from "react";
 import { NavLink } from "react-router-dom"; // Changed from Link to NavLink
-import mx from '/mx-2.png';
+import mx from '/mx-2.png'; //last edit ye hia 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,6 +131,15 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
+              <NavLink 
+                to="/branches" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Our Center  
+              </NavLink>
 
               <NavLink 
                 to="/courses" 
@@ -162,15 +171,7 @@ const Navbar = () => {
                 Contact
               </NavLink>
 
-              <NavLink 
-                to="/about" 
-                className={({ isActive }) => 
-                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
-                }
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </NavLink>
+                
 
               <NavLink 
                 to="/login" 

@@ -1,28 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FiMail, FiPhone, FiUser, FiMessageSquare, FiClock } from "react-icons/fi";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData((prev) => ({
-      ...prev,
-      [e.target.name]: e.target.value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Message submitted:", formData);
-    alert("Thank you for your message! We'll contact you soon.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
-  };
-
   return (
     <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8 border-t-4 border-[#0C0950]">
       <div className="max-w-4xl mx-auto">
@@ -48,7 +27,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Phone Number</h4>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 9220958292</p>
                 </div>
               </div>
 
@@ -58,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Email Address</h4>
-                  <p className="text-gray-600">contact@maxeducation.com</p>
+                  <p className="text-gray-600">maxknock90@gmail.com</p>
                 </div>
               </div>
 
@@ -74,7 +53,11 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-5">
+            <form 
+              action="https://formspree.io/f/mpwdeayb" 
+              method="POST"
+              className="space-y-5"
+            >
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <FiUser className="text-gray-400" />
@@ -84,8 +67,6 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                   required
-                  value={formData.name}
-                  onChange={handleChange}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
@@ -99,8 +80,6 @@ const Contact = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  value={formData.email}
-                  onChange={handleChange}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
@@ -113,8 +92,6 @@ const Contact = () => {
                   type="tel"
                   name="phone"
                   placeholder="Phone Number"
-                  value={formData.phone}
-                  onChange={handleChange}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
@@ -128,8 +105,6 @@ const Contact = () => {
                   placeholder="Your Message"
                   rows="4"
                   required
-                  value={formData.message}
-                  onChange={handleChange}
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>

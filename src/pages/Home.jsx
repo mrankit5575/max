@@ -17,6 +17,9 @@ import AnnouncementBanner from "../layouts/AnnouncementBanner";
 import Gallery from "../components/Photo";
 import Branches from "../layouts/Branches";
 import TeacherSection from "../layouts/TeacherSection";
+import CareerBenefits from "./CareerBenefits";
+import UpcomingBatches from "./UpcomingBatches";
+import DiceAdvantage from "./DiceAdvantage";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -268,12 +271,15 @@ export default function Home() {
         <Features />
         <AboutSection/>
         <CoursesPage />
+        <DiceAdvantage/>
         <AboutUsSection/>
         <Branches/>
         <TeacherSection/>
+         <Testimonials />
+         <UpcomingBatches/>
         <Gallery/>
         <BannerWithAnimation/>
-         <Testimonials />
+        <CareerBenefits/>
          <InstagramGallery/>
          
       </div>
