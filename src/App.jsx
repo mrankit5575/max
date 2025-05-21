@@ -14,6 +14,9 @@ import ParticleAnimation from './pages/ParticleAnimation';
 import LoginForm from './pages/Login';
 import Gallery from './components/Photo';
 import Branches from './layouts/Branches';
+import UpcomingBatches from './pages/UpcomingBatches';
+import TeacherSection from './layouts/TeacherSection';
+import Testimonials from './components/Testimonials';
    
 function App() {
   return (
@@ -36,6 +39,11 @@ function App() {
             <Route path="/login" element={<LoginForm/>} />
             <Route path="/photo" element={<Gallery/>} />
             <Route path="/branches" element={<Branches/>} />
+            <Route path="/upcomming" element={<UpcomingBatches/>} />
+            <Route path="/teacher" element={<TeacherSection/>} />
+            <Route path="/feedback" element={<Testimonials  />} />
+            
+            
             {/* <Route path="/tutor" element={<TutorCard/>} /> */}
           </Routes>
         </main>

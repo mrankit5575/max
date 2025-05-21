@@ -10,7 +10,7 @@ const dummyBatches = [
     status: 'Starting Soon',
     startDate: '15 June 2023',
     details: ['Mon, Wed, Fri', '6PM – 8PM', '1.5 months', 'Manoj Kumar'],
-    price: '₹12,999',
+    // price: '₹12,999',
     seatsLeft: 5,
     popular: true,
   },
@@ -21,7 +21,7 @@ const dummyBatches = [
     status: 'Limited Seats',
     startDate: '20 June 2023',
     details: ['Tue, Thu', '4PM – 6PM', '1 month', 'Chaitali Sharma'],
-    price: '₹8,999',
+    // price: '₹8,999',
     seatsLeft: 2,
     popular: true,
   },
@@ -32,7 +32,7 @@ const dummyBatches = [
     status: 'Enrollment Open',
     startDate: '25 June 2023',
     details: ['Sat, Sun', '2PM – 4PM', '2 months', 'Ravindra Patel'],
-    price: '₹10,499',
+    // price: '₹10,499',
     seatsLeft: 12,
   },
   {
@@ -42,7 +42,7 @@ const dummyBatches = [
     status: 'New Batch',
     startDate: '1 July 2023',
     details: ['Mon, Wed, Fri', '7PM – 9PM', '2 months', 'Yogesh Verma'],
-    price: '₹14,999',
+    // price: '₹14,999',
     seatsLeft: 15,
   },
   {
@@ -52,7 +52,7 @@ const dummyBatches = [
     status: 'Early Bird',
     startDate: '5 July 2023',
     details: ['Tue, Thu, Sat', '5PM – 7PM', '1 month', 'Neha Gupta'],
-    price: '₹9,999',
+    // price: '₹9,999',
     seatsLeft: 8,
     popular: true,
   },
@@ -63,7 +63,7 @@ const dummyBatches = [
     status: 'Starting Soon',
     startDate: '10 July 2023',
     details: ['Mon, Wed, Fri', '3PM – 5PM', '2 months', 'Amit Singh'],
-    price: '₹13,499',
+    // price: '₹13,499',
     seatsLeft: 6,
   },
 ];
@@ -129,10 +129,10 @@ const BatchCard = ({ batch }) => (
     </div>
     
     <div className="flex justify-between items-center mb-4">
-      <div className="text-lg font-bold text-gray-800 flex items-center">
+      {/* <div className="text-lg font-bold text-gray-800 flex items-center">
         <FiDollarSign className="mr-1" />
         {batch.price}
-      </div>
+      </div> */}
       <div className="text-sm text-gray-500">
         {batch.seatsLeft} {batch.seatsLeft === 1 ? 'seat' : 'seats'} left
       </div>
