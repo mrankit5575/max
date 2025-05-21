@@ -25,7 +25,7 @@ export default function Dashboard() {
   const fetchAnnouncement = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get('http://localhost:8080/announcement/');
+      const res = await axios.get('https://maxbackend.onrender.com/announcement/');
       if (res.data && Object.keys(res.data).length !== 0) {
         setAnnouncement(res.data);
         setTitle(res.data.title);
@@ -48,7 +48,7 @@ export default function Dashboard() {
     setLoginMsg('');
     setIsLoading(true);
     try {
-      const res = await axios.post('http://localhost:8080/user/login/register', {
+      const res = await axios.post('https://maxbackend.onrender.com/user/login/register', {
         email,
         password,
       });
@@ -71,7 +71,7 @@ export default function Dashboard() {
     }
     setIsLoading(true);
     try {
-      const res = await axios.post('http://localhost:8080/announcement/create', {
+      const res = await axios.post('https://maxbackend.onrender.com/announcement/create', {
         title,
         message,
         createdBy,
@@ -93,7 +93,7 @@ export default function Dashboard() {
     }
     setIsLoading(true);
     try {
-      const res = await axios.put('http://localhost:8080/announcement/update', {
+      const res = await axios.put('https://maxbackend.onrender.com/announcement/update', {
         title,
         message,
         createdBy,
@@ -111,7 +111,7 @@ export default function Dashboard() {
     if (!window.confirm('Are you sure you want to delete the announcement?')) return;
     setIsLoading(true);
     try {
-      await axios.delete('http://localhost:8080/announcement/delete');
+      await axios.delete('https://maxbackend.onrender.com/announcement/delete');
       setAnnouncement(null);
       setTitle('');
       setMessage('');

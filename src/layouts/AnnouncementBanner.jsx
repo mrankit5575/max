@@ -10,7 +10,7 @@ export default function AnnouncementBanner() {
   useEffect(() => {
     const fetchAnnouncement = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/announcement/');
+        const res = await axios.get('https://maxbackend.onrender.com/announcement/');
         if (res.data && Object.keys(res.data).length > 0) {
           setAnnouncement(res.data);
         } else {
