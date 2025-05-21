@@ -39,7 +39,8 @@ const tabs = [
           </div>
         </div>
         <div className="mt-6">
-          <a 
+          
+          {/* <a 
             href="https://www.dice-academy.com/courses" 
             className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium transition-colors"
           >
@@ -47,7 +48,7 @@ const tabs = [
             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
-          </a>
+          </a> */}
         </div>
       </div>
     ),
