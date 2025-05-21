@@ -2,7 +2,9 @@
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-const MotionLink = motion(Link);
+// const MotionLink = motion(Link);
+const MotionLink = motion.create(Link); // ✅ Updated way
+
 
 const courses = [
   {

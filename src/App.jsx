@@ -10,7 +10,7 @@ import TopHeader from './pages/TopHeader';
 import CoursesPage from './pages/CoursesPage';
 import CourseDetails from './pages/CourseDetails';
 import ParticleAnimation from './pages/ParticleAnimation';
-import LocationMap from './components/LocationMap';
+// import LocationMap from './components/LocationMap';
 import LoginForm from './pages/Login';
 import Gallery from './components/Photo';
 import Branches from './layouts/Branches';
@@ -39,7 +39,7 @@ function App() {
             {/* <Route path="/tutor" element={<TutorCard/>} /> */}
           </Routes>
         </main>
-        <LocationMap />
+        {/* <LocationMap /> */}
         <Footer />
       </div>
     </Router>

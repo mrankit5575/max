@@ -1,7 +1,7 @@
- // components/AnnouncementBanner.js
+// components/AnnouncementBanner.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion'; // ✅ fixed import
 
 export default function AnnouncementBanner() {
   const [announcement, setAnnouncement] = useState(null);
@@ -39,7 +39,6 @@ export default function AnnouncementBanner() {
         transition={{ duration: 0.3 }}
         className="relative bg-red-500 border-l-4 border-[#0C0950] text-white p-6 rounded-lg shadow-lg mb-6 overflow-hidden"
       >
-        {/* Decorative elements */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500 to-transparent"></div>
         
         <div className="flex justify-between items-start">
@@ -88,7 +87,6 @@ export default function AnnouncementBanner() {
           </motion.button>
         </div>
         
-        {/* Pulsing indicator */}
         <motion.div
           className="absolute bottom-2 right-2 flex space-x-1"
           animate={{ 

@@ -19,12 +19,50 @@ const branches = [
       "/delhi2.webp",
     ],
     location: " Office No-12, Maa Jwala Complex, Pocket 3, Badli, Samaypur, Delhi, 110042",
-    contact: "+91 95408 02050",
-    email: "delhi@abcinstitute.edu",
-    hours: "Mon-Sat: 9:00 AM - 7:00 PM",
-    mapLink: "https://www.google.com/maps?q=Gali+no-11,+Radha+Vihar,+Mukundpur,+Delhi"
+    contact: "+91 95408 02050 , 9540901901",
+    email: "maxcomputer09@gmail.com",
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
   },
-  
+  {
+    name: "Max Education MukundPur Delhi",
+    images: [
+       "/mp.jpg",
+      "/mp1.jpg",
+      "/mp2.jpg",
+    ],
+    location: "Gali no-11 Radha Vihar MukundPur Delhi-110042 ",
+    contact: "+91 9220958292 , 9315322573 ",
+    email: "maxknock90@gmail.com",
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
+  },
+  {
+    name: "Max Education Raja Vihar",
+    images: [
+       "/raja.jpg",
+      "/raja1.jpg",
+      "/raja2.jpg",
+    ],
+    location: "Q42M+73F, Raja Vihar, Samaypur, Delhi, 110042",
+    contact: "+91 8882612961 , 9315322573",
+    email: "maxknock90@gmail.com",
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/dir/28.743044,77.1818607/Q42M%2B73F,+Raja+Vihar,+Samaypur,+Delhi,+110042/@28.7500684,77.132781,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x390d010016dcfadf:0x7c484afda88e43f5!2m2!1d77.1326606!2d28.7506759!6m3!1i0!2i2!3i4?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D "
+  },
+  {
+    name: "Max Education MithaPur",
+    images: [
+       "/new.jpg",
+      "/new1.jpg",
+      "/new2.jpg",
+    ],
+    location: "Gali no-11 Radha Vihar MukundPur Delhi-110042 ",
+    contact: "+91 9540903903",
+    email: "pankajku9354@gmail.com",
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/place/28%C2%B029'15.9%22N+77%C2%B019'08.8%22E/@28.48775,77.3165318,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.48775!4d77.3191067?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
+  },
   {
     name: "Max Education (Haryana)",
     images: [
@@ -35,8 +73,8 @@ const branches = [
     location: "Ward No. 11, Khasra No. 14//4, near Shiv Mandir, Gaddha Colony, chhotu ram nagar, Haryana 124507",
     contact: "+91 9220958292",
     email: "delhi@abcinstitute.edu",
-    hours: "Mon-Sat: 9:00 AM - 7:00 PM",
-    mapLink: "https://www.google.com/maps?q=Gali+no-11,+Radha+Vihar,+Mukundpur,+Delhi"
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/dir//Ward+No.+11,+Khasra+No.+14%2F%2F4,+near+Shiv+Mandir,+Gaddha+Colony,+chhotu+ram+nagar,+Haryana+124507/@28.6976108,76.8791385,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d090009295467:0xf2ea0214645698cf!2m2!1d76.9615399!2d28.6976358?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
   },
   {
     name: "Max Education Ratanpur",
@@ -48,7 +86,7 @@ const branches = [
     location: "824P+3G7, near S.A.H Educational school, Jalil Pur, Ratanpur, Varanasi, Uttar Pradesh 221008",
     contact: "+91 092191 23445",
     email: "mumbai@abcinstitute.edu",
-    hours: "Mon-Sat: 9:30 AM - 6:30 PM",
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
     mapLink: "https://www.google.com/maps?client=ms-android-realme-terr1-rso2&sca_esv=8bb619a2aead404d&hl=en-GB&cs=0&sxsrf=AHTn8zo_SyU3Eo8ejDTE1y4uQVuPzPZsrA:1747730526311&kgmid=/g/11tswsbz58&shndl=30&shem=lstuoe2&kgs=78f6b2c256f3e4a8&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KaUH0DX2MY45MWydUU_w4NsR&daddr=824P%2B3G7,+near+S.A.H+Educational+school,+Jalil+Pur,+Ratanpur,+Varanasi,+Uttar+Pradesh+221008"
   },
   {
@@ -61,8 +99,8 @@ const branches = [
     location: "Adarsh Bazar, Husepur, Ghazipur, Uttar Pradesh 233001",
     contact: "+91 092191 23445",
     email: "lucknow@abcinstitute.edu",
-    hours: "Mon-Sat: 10:00 AM - 6:00 PM",
-    mapLink: "https://www.google.com/maps?q=78,+Hazratganj,+Lucknow"
+    hours: "Mon-Sat: 7:00 AM - 9:00 PM",
+    mapLink: "https://www.google.com/maps/dir//Adarsh+Bazar,+Husepur,+Ghazipur,+Uttar+Pradesh+233001/@25.5481241,83.4428785,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3991ff8594a9503d:0x4123bdab182ee52a!2m2!1d83.5252849!2d25.548157?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
   },
 ];
 
@@ -162,7 +200,7 @@ const Branches = () => {
                   <h3 className="text-2xl font-bold text-white">{branch.name}</h3>
                   <button 
                     onClick={() => openGallery(branch.images, branch.name)}
-                    className="mt-2 text-sm text-white/80 hover:text-white flex items-center"
+                    className="mt-2 text-lg text-white/80 hover:text-white flex items-center "
                   >
                     View Photos ({branch.images.length})
                   </button>

@@ -16,6 +16,7 @@ import AboutSection from "../layouts/AboutSection";
 import AnnouncementBanner from "../layouts/AnnouncementBanner";
 import Gallery from "../components/Photo";
 import Branches from "../layouts/Branches";
+import TeacherSection from "../layouts/TeacherSection";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -269,6 +270,7 @@ export default function Home() {
         <CoursesPage />
         <AboutUsSection/>
         <Branches/>
+        <TeacherSection/>
         <Gallery/>
         <BannerWithAnimation/>
          <Testimonials />

@@ -1,74 +1,89 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+ import { useState } from "react";
+import { NavLink } from "react-router-dom"; // Changed from Link to NavLink
 import mx from '/mx-2.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSubjectsOpen, setIsSubjectsOpen] = useState(false);
+  
+   
 
-  const courses = [
-    { label: "Tally Prime", link: "/courses/tally" },
-    { label: "Basic Computer", link: "/courses/basic-computer" },
-    { label: "Web Development", link: "/courses/web-development" },
-    { label: "DCA", link: "/courses/dca" },
-    { label: "Photoshop", link: "/courses/photoshop" },
-    { label: "Video Editing", link: "/courses/video-editing" },
-    { label: "Animation", link: "/courses/animation" },
-  ];
+  // Custom class for active links
+  const activeClass = "text-red-500 font-semibold";
+  const mobileActiveClass = "bg-[#0C2950]/20 text-[#0C2950] font-semibold";
 
   return (
     <nav className="bg-black shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
-          <Link to="/" className="inline-flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md transition-all" aria-label="Home">
+          <NavLink 
+            to="/" 
+            className={({ isActive }) => 
+              `inline-flex items-center focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-md transition-all ${isActive ? activeClass : "text-white"}`
+            }
+            aria-label="Home"
+          >
             <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4" />
-            <p className="text-white">MAX EDUCATION</p>
-          </Link>
+            <p>MAX EDUCATION</p>
+          </NavLink>
 
           {/* Desktop Links */}
           <div className="hidden md:flex space-x-6 items-center">
-            <Link to="/" className="text-white hover:text-red-500 transition-colors">Home</Link>
-            <Link to="/branches" className="text-white hover:text-red-500 transition-colors">Our Centers</Link>
-            {/* Courses Dropdown */}
-            <div className="relative group">
-              <button
-                className="px-4 py-2 rounded-md font-medium transition-all duration-200 bg-[#0C2950] text-white hover:bg-[#1a3773] focus:outline-none"
-                onMouseEnter={() => setIsSubjectsOpen(true)}
-                onMouseLeave={() => setIsSubjectsOpen(false)}
-                onClick={() => setIsSubjectsOpen((prev) => !prev)}
-                type="button"
-              >
-                Courses
-              </button>
-              {/* Dropdown */}
-              <div
-                onMouseEnter={() => setIsSubjectsOpen(true)}
-                onMouseLeave={() => setIsSubjectsOpen(false)}
-                className={`absolute left-0 mt-2 min-w-[220px] rounded-xl shadow-2xl transition-all duration-300 ease-in-out
-                  ${isSubjectsOpen ? "opacity-100 translate-x-0 pointer-events-auto" : "opacity-0 -translate-x-8 pointer-events-none"}
-                  bg-white/60 backdrop-blur-md border border-[#0C2950]`}
-                style={{ zIndex: 100 }}
-              >
-                <ul className="py-2">
-                  {courses.map((course) => (
-                    <li key={course.link}>
-                      <Link
-                        to={course.link}
-                        className="block px-5 py-2 text-[#0C2950] hover:bg-[#0C2950] hover:text-white transition-all duration-200 rounded-md"
-                        onClick={() => setIsSubjectsOpen(false)}
-                      >
-                        {course.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-                        <Link to="/photo" className="text-white hover:text-red-500 transition-colors">Gallery</Link>
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Home
+            </NavLink>
+            
+            <NavLink 
+              to="/branches" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Our Centers
+            </NavLink>
+            <NavLink 
+              to="/courses" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Courses
+            </NavLink>
+            
+             
+              
+            
+            <NavLink 
+              to="/photo" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Gallery
+            </NavLink>
 
-            <Link to="/contact" className="text-white hover:text-red-500 transition-colors">Contact</Link>
-            <Link to="/login" className="text-white hover:text-red-500 transition-colors">Login</Link>
+            <NavLink 
+              to="/contact" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Contact
+            </NavLink>
+            
+            <NavLink 
+              to="/login" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Login
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -107,19 +122,66 @@ const Navbar = () => {
               <button onClick={() => setIsOpen(false)} className="text-[#0C2950] text-2xl focus:outline-none">&times;</button>
             </div>
             <div className="py-2 px-4 space-y-2">
-  <Link to="/" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Home</Link>
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </NavLink>
 
-  <Link to="/courses" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Courses</Link>
+              <NavLink 
+                to="/courses" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Courses
+              </NavLink>
 
-  <Link to="/photo" className="block px-3 py-2 rounded-md  hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Gallery</Link>
-  <Link to="/contact" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
+              <NavLink 
+                to="/photo" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Gallery
+              </NavLink>
+              
+              <NavLink 
+                to="/contact" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </NavLink>
 
+              <NavLink 
+                to="/about" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </NavLink>
 
-  <Link to="/about" className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-[#0C2950] font-medium" onClick={() => setIsOpen(false)}>About</Link>
-
-  <Link to="/login" className="block bg-[#0C2950] text-white px-4 py-2 rounded-md text-center hover:bg-[#1a3773] transition-colors font-medium" onClick={() => setIsOpen(false)}>Login</Link>
-</div>
-
+              <NavLink 
+                to="/login" 
+                className={({ isActive }) => 
+                  `block px-4 py-2 rounded-md text-center hover:bg-[#1a3773] transition-colors font-medium ${isActive ? "bg-[#1a3773] text-white" : "bg-[#0C2950] text-white"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Login
+              </NavLink>
+            </div>
           </div>
         </div>
       )}
@@ -127,4 +189,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar;  
