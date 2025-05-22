@@ -21,6 +21,7 @@ import CareerBenefits from "./CareerBenefits";
 // import UpcomingBatches from "./UpcomingBatches";
 import DiceAdvantage from "./DiceAdvantage";
 import BatchList from "./UpcomingBatches";
+import ScrollingBranches from "./ScrollingBranches";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -268,8 +269,9 @@ export default function Home() {
         </section>
 
         {/* Other Sections */}
-        <FeatureCards/>
+        <ScrollingBranches/>
         <Features />
+        <FeatureCards/>
         <AboutSection/>
         <CoursesPage />
         <DiceAdvantage/>

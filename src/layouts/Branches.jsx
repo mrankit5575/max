@@ -19,7 +19,7 @@ const branches = [
       "/delhi2.webp",
     ],
     location: " Office No-12, Maa Jwala Complex, Pocket 3, Badli, Samaypur, Delhi, 110042",
-    contact: "+91 95408 02050 , 9540901901",
+    contact: "+91 95408 02050",
     email: "maxcomputer09@gmail.com",
     hours: "Mon-Sat: 7:00 AM - 9:00 PM",
     mapLink: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
@@ -32,7 +32,7 @@ const branches = [
       "/mp2.jpg",
     ],
     location: "Gali no-11 Radha Vihar MukundPur Delhi-110042 ",
-    contact: "+91 9220958292 , 9315322573 ",
+    contact: "+91 9220958292 ",
     email: "maxknock90@gmail.com",
     hours: "Mon-Sat: 7:00 AM - 9:00 PM",
     mapLink: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
@@ -45,7 +45,7 @@ const branches = [
       "/raja2.jpg",
     ],
     location: "Q42M+73F, Raja Vihar, Samaypur, Delhi, 110042",
-    contact: "+91 8882612961 , 9315322573",
+    contact: "+91 8882612961",
     email: "maxknock90@gmail.com",
     hours: "Mon-Sat: 7:00 AM - 9:00 PM",
     mapLink: "https://www.google.com/maps/dir/28.743044,77.1818607/Q42M%2B73F,+Raja+Vihar,+Samaypur,+Delhi,+110042/@28.7500684,77.132781,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x390d010016dcfadf:0x7c484afda88e43f5!2m2!1d77.1326606!2d28.7506759!6m3!1i0!2i2!3i4?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D "
