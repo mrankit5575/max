@@ -22,6 +22,7 @@ import CareerBenefits from "./CareerBenefits";
 import DiceAdvantage from "./DiceAdvantage";
 import BatchList from "./UpcomingBatches";
 import ScrollingBranches from "./ScrollingBranches";
+import StudentDetails from "./StudentDetails";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -272,6 +273,7 @@ export default function Home() {
         <ScrollingBranches/>
         <Features />
         <FeatureCards/>
+        <StudentDetails/>
         <AboutSection/>
         <CoursesPage />
         <DiceAdvantage/>

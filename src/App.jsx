@@ -20,6 +20,8 @@ import TeacherSection from './layouts/TeacherSection';
 import Testimonials from './components/Testimonials';
 import BatchManager from './pages/BatchManager';
 import ScrollToTop from './components/ScrollToTop';  // Import ScrollToTop
+import CourseMaterial from './pages/CourseMaterials';
+import StudentManager from './pages/StudentManager';
 
 function App() {
   return (
@@ -45,6 +47,9 @@ function App() {
             <Route path="/upcomming" element={<UpcomingBatches />} />
             <Route path="/teacher" element={<TeacherSection />} />
             <Route path="/feedback" element={<Testimonials />} />
+            <Route path="/coursematerial" element={<CourseMaterial />} />
+            <Route path="/studentMangeABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" element={<StudentManager/>} />
+
             <Route path="/managerABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" element={<BatchManager />} />
           </Routes>
         </main>

@@ -6,7 +6,7 @@ import {
 } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const API_BASE = "https://maxbackend.onrender.com/api/batch/";
+const API_BASE = "https://maxbackend.onrender.com/api/batches";
 const BATCHES_PER_PAGE = 6;
 
 export default function BatchList() {

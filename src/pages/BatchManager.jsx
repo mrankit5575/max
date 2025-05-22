@@ -24,7 +24,7 @@ export default function BatchManager() {
   const fetchBatches = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("https://maxbackend.onrender.com/api/batch");
+      const res = await axios.get("https://maxbackend.onrender.com/api/batches");
       setBatches(res.data);
     } catch (err) {
       setError("Failed to fetch batches. Please try again.");
@@ -56,10 +56,10 @@ export default function BatchManager() {
 
     try {
       if (editingId) {
-        await axios.put(`https://maxbackend.onrender.com/api/batch/update/${editingId}`, formData);
+        await axios.put(`https://maxbackend.onrender.com/api/batches/update/${editingId}`, formData);
         setSuccessMessage("Batch updated successfully!");
       } else {
-        await axios.post("https://maxbackend.onrender.com/api/batch/add", formData);
+        await axios.post("https://maxbackend.onrender.com/api/batches/add", formData);
         setSuccessMessage("Batch added successfully!");
       }
       setFormData(initialState);
@@ -84,7 +84,7 @@ export default function BatchManager() {
     if (!window.confirm("Are you sure you want to delete this batch?")) return;
     
     try {
-      await axios.delete(`https://maxbackend.onrender.com/api/batch/delete/${id}`);
+      await axios.delete(`https://maxbackend.onrender.com/api/batches/delete/${id}`);
       setSuccessMessage("Batch deleted successfully!");
       fetchBatches();
       setTimeout(() => setSuccessMessage(""), 3000);

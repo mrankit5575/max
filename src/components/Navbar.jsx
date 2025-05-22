@@ -74,6 +74,14 @@ const Navbar = () => {
             >
               Gallery
             </NavLink>
+            <NavLink 
+              to="/coursematerial" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Material
+            </NavLink>
 
             <NavLink 
               to="/contact" 

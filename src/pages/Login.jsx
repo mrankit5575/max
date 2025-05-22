@@ -26,7 +26,7 @@ export default function Dashboard() {
   const fetchAnnouncement = async () => {
     setIsLoading(true);
     try {
-      const res = await axios.get('https://maxbackend.onrender.com/announcement/');
+      const res = await axios.get('https://maxbackend.onrender.com/api/announcements');
       if (res.data && Object.keys(res.data).length !== 0) {
         setAnnouncement(res.data);
         setTitle(res.data.title);
@@ -49,7 +49,7 @@ export default function Dashboard() {
     setLoginMsg('');
     setIsLoading(true);
     try {
-      const res = await axios.post('https://maxbackend.onrender.com/user/login/register', {
+      const res = await axios.post('https://maxbackend.onrender.com/api/users/register', {
         email,
         password,
       });
@@ -72,7 +72,7 @@ export default function Dashboard() {
     }
     setIsLoading(true);
     try {
-      const res = await axios.post('https://maxbackend.onrender.com/announcement/create', {
+      const res = await axios.post('https://maxbackend.onrender.com/api/announcements/create', {
         title,
         message,
         createdBy,
@@ -94,7 +94,7 @@ export default function Dashboard() {
     }
     setIsLoading(true);
     try {
-      const res = await axios.put('https://maxbackend.onrender.com/announcement/update', {
+      const res = await axios.put('https://maxbackend.onrender.com/api/announcements/update', {
         title,
         message,
         createdBy,
@@ -112,7 +112,7 @@ export default function Dashboard() {
     if (!window.confirm('Are you sure you want to delete the announcement?')) return;
     setIsLoading(true);
     try {
-      await axios.delete('https://maxbackend.onrender.com/announcement/delete');
+      await axios.delete('https://maxbackend.onrender.com/api/announcements/delete');
       setAnnouncement(null);
       setTitle('');
       setMessage('');
@@ -315,10 +315,19 @@ export default function Dashboard() {
           {/* Link as button */}
       <Link
         to="/managerABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
-        className="inline-block bg-red-600  text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        className="inline-block bg-red-600  text-white px-4 py-2 rounded hover:bg-[#0C0950] transition"
       >
         ADD Course
       </Link>
+      <div className=' mt-5'>
+
+      <Link
+        to="/studentMangeABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        className="inline-block bg-green-600  text-white px-4 py-2 rounded hover:bg-[#0C0950] transition"
+        >
+        Weak of Student
+      </Link>
+        </div>
         </main>
       </div>
     </div>
