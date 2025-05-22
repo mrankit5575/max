@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function Dashboard() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -311,6 +312,13 @@ export default function Dashboard() {
               </div>
             </>
           )}
+          {/* Link as button */}
+      <Link
+        to="/managerABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+        className="inline-block bg-red-600  text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+      >
+        ADD Course
+      </Link>
         </main>
       </div>
     </div>

@@ -18,8 +18,9 @@ import Gallery from "../components/Photo";
 import Branches from "../layouts/Branches";
 import TeacherSection from "../layouts/TeacherSection";
 import CareerBenefits from "./CareerBenefits";
-import UpcomingBatches from "./UpcomingBatches";
+// import UpcomingBatches from "./UpcomingBatches";
 import DiceAdvantage from "./DiceAdvantage";
+import BatchList from "./UpcomingBatches";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -276,7 +277,8 @@ export default function Home() {
         <Branches/>
         <TeacherSection/>
          <Testimonials />
-         <UpcomingBatches/>
+         {/* <UpcomingBatches/> */}
+         <BatchList/>
         <Gallery/>
         <BannerWithAnimation/>
         <CareerBenefits/>

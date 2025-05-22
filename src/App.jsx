@@ -1,9 +1,10 @@
+ // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import TutorCard from './components/TutorCard';
 import Contact from './pages/Contact';
-import Navbar from './components/Navbar';  // ✅ Import added
-import Footer from './components/Footer';  // ✅ Import added
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Tutors from './pages/Tutors';
 import BecomeATutor from './components/BecomeATutor';
 import TopHeader from './pages/TopHeader';
@@ -17,37 +18,37 @@ import Branches from './layouts/Branches';
 import UpcomingBatches from './pages/UpcomingBatches';
 import TeacherSection from './layouts/TeacherSection';
 import Testimonials from './components/Testimonials';
-   
+import BatchManager from './pages/BatchManager';
+import ScrollToTop from './components/ScrollToTop';  // Import ScrollToTop
+
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* This will handle scroll reset on route change */}
       <div className="flex flex-col min-h-screen">
-        <TopHeader/>
+        <TopHeader />
         <Navbar />
-        <ParticleAnimation/>
-        
+        <ParticleAnimation />
+
         <main className="flex-grow">
           <Routes>
-          
             <Route path="/" element={<Home />} />
             <Route path="/courses" element={<CoursesPage />} />
-            <Route path="/courses/:slug" element={<CourseDetails/>} />
+            <Route path="/courses/:slug" element={<CourseDetails />} />
             <Route path="/tutor" element={<Tutors />} />
             <Route path="/become-tutor" element={<BecomeATutor />} />
-            <Route path="/contact" element={<Contact/>} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Contact />} />
-            <Route path="/login" element={<LoginForm/>} />
-            <Route path="/photo" element={<Gallery/>} />
-            <Route path="/branches" element={<Branches/>} />
-            <Route path="/upcomming" element={<UpcomingBatches/>} />
-            <Route path="/teacher" element={<TeacherSection/>} />
-            <Route path="/feedback" element={<Testimonials  />} />
-            
-            
-            {/* <Route path="/tutor" element={<TutorCard/>} /> */}
+            <Route path="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" element={<LoginForm />} />
+            <Route path="/photo" element={<Gallery />} />
+            <Route path="/branches" element={<Branches />} />
+            <Route path="/upcomming" element={<UpcomingBatches />} />
+            <Route path="/teacher" element={<TeacherSection />} />
+            <Route path="/feedback" element={<Testimonials />} />
+            <Route path="/managerABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789" element={<BatchManager />} />
           </Routes>
         </main>
-        {/* <LocationMap /> */}
+
         <Footer />
       </div>
     </Router>

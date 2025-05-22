@@ -47,6 +47,14 @@ const Navbar = () => {
               Our Centers
             </NavLink>
             <NavLink 
+              to= "/upcomming" 
+              className={({ isActive }) => 
+                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+              }
+            >
+              Batch
+            </NavLink>
+            <NavLink 
               to="/courses" 
               className={({ isActive }) => 
                 `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
@@ -77,7 +85,7 @@ const Navbar = () => {
             </NavLink>
             
             <NavLink 
-              to="/login" 
+              to="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" 
               className={({ isActive }) => 
                 `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
               }

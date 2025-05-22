@@ -13,7 +13,8 @@ export default function Footer() {
           <div className="space-y-4">
             <div>
               <h1 className="text-2xl font-bold text-white mb-1">MAX EDUCATION</h1>
-              <p className="text-gray-400 text-sm">Dev-<a href="https://www.instagram.com/viranshusingh055/" target="_blank">Viranshu</a><br />Detechie Digital Academy Private Limited</p>
+              <p className="text-gray-400 text-sm">Developer! -    <a href="https://www.instagram.com/viranshusingh055/" target="_blank">Ankit Singh</a><br />ankitroy5575@gmail.com</p>
+              <p className="text-gray-400 text-sm"><a href="https://www.avdevelopment.in/" target="_blank">avdevelopment Private Limited</a><br /></p>
             </div>
 
             <div className="flex flex-col space-y-3">
@@ -41,12 +42,12 @@ export default function Footer() {
             <h2 className="text-white font-semibold text-lg mb-4 pb-2 border-b border-gray-700">Quick Links</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { label: "Home", path: "/home" },
+                { label: "Home", path: "/" },
                 { label: "Courses", path: "/courses" },
                 { label: "Placements", path: "/feedback" },
                 { label: "Our Campus", path: "/photo" },
                 { label: "Contact Us", path: "/contact" },
-                { label: "FAQs", path: "/faqs" },
+                { label: "FAQs", path: "/contact" },
                 { label: "Hire From Us", path: "/contact" },
                 { label: "Learning Center", path: "/branches" },
                 { label: "Certificate Verification", path: "/verify" },
@@ -80,13 +81,14 @@ export default function Footer() {
 
             <div className="flex flex-col space-y-3 pt-2">
               <button className="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-md text-white text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
-                <span>💳</span><span>Pay Fee</span>
+                <span>💳</span><span>Pay Fee Offline</span>
               </button>
               <button className="border border-gray-600 hover:border-white px-4 py-2 rounded-md text-white text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
-                <span>💬</span><span>Support</span>
+               <Link to= "/contact"> <span>💬</span><span>Support</span></Link>
               </button>
               <button className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md text-white text-sm font-medium transition-colors duration-200 flex items-center justify-center space-x-2">
-               <span>🔐</span><span>Login/Signup</span>
+             <Link               to="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" 
+><span>🔐</span><span>Login/Signup</span></Link>  
               </button>
             </div>
           </div>
@@ -159,7 +161,8 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
           <p>© {new Date().getFullYear()} MAX EDUCATION. All Rights Reserved.</p>
-          <p className="mt-1">Developed by <span className="text-white font-semibold">Viranshu Singh</span> | WhatsApp: <a href="https://wa.me/919718659236" className="text-green-400 hover:text-green-300">9718659236</a></p>
+          <p className="mt-1">Developed by <span className="text-white font-semibold">Ankit Singh</span> | WhatsApp: <a href="https://wa.me/919718659236" className="text-green-400 hover:text-green-300">9718659236</a></p>
+          {/* <p className="mt-1">social <span className="text-white font-semibold">Ankit Singh</span> | WhatsApp: <a href="https://wa.me/919718659236" className="text-green-400 hover:text-green-300">9718659236</a></p> */}
           <div className="flex justify-center space-x-4 mt-2">
             <a href="/privacy" className="hover:text-gray-300 transition-colors duration-200">Privacy Policy</a>
             <a href="/terms" className="hover:text-gray-300 transition-colors duration-200">Terms of Service</a>
