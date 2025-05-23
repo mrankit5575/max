@@ -176,6 +176,15 @@ const Navbar = () => {
               >
                 Gallery
               </NavLink>
+              <NavLink 
+                to="/coursematerial" 
+                className={({ isActive }) => 
+                  `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
+                }
+                onClick={() => setIsOpen(false)}
+              >
+                Material
+              </NavLink>
               
               <NavLink 
                 to="/contact" 
@@ -190,7 +199,7 @@ const Navbar = () => {
                 
 
               <NavLink 
-                to="/login" 
+                to="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" 
                 className={({ isActive }) => 
                   `block px-4 py-2 rounded-md text-center hover:bg-[#1a3773] transition-colors font-medium ${isActive ? "bg-[#1a3773] text-white" : "bg-[#0C2950] text-white"}`
                 }

@@ -23,6 +23,7 @@ import DiceAdvantage from "./DiceAdvantage";
 import BatchList from "./UpcomingBatches";
 import ScrollingBranches from "./ScrollingBranches";
 import StudentDetails from "./StudentDetails";
+import CourseSlider from "./CourseScroller";
  // import ChatBot from "../layouts/ChetBoat";
 
 const changingTexts = [
@@ -287,6 +288,8 @@ export default function Home() {
         <BannerWithAnimation/>
         <CareerBenefits/>
          <InstagramGallery/>
+        {/* <CourseScroller/> */}
+        <CourseSlider/>
          
       </div>
     </div>

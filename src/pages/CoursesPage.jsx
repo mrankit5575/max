@@ -9,60 +9,98 @@ const MotionLink = motion.create(Link); // ✅ Updated way
 const courses = [
   {
     title: "Tally Prime",
-    description: "Master accounting with Tally Prime, GST, and billing.",
-    image: "/tallyprime.webp",
+    description: "Master accounting with Tally Prime, GST, inventory, payroll, and BUSY software",
+    image: "/tallybusy.jpg",
     slug: "tally",
     color: "from-blue-500 to-blue-700",
     size: "md:col-span-2" // Wider card
   },
   {
     title: "Basic Computer",
-    description: "Learn fundamental computer operations and MS Office.",
-    image: "/basic.webp",
+    description: "Learn essential computer skills including Office tools, Internet, Cyber Safety, and AI basics ",
+    image: "/basicimage.jpg",
     slug: "basic-computer",
     color: "from-purple-500 to-purple-700",
     size: "md:col-span-1"
   },
   {
     title: "Web Development",
-    description: "Build websites with HTML, CSS, JavaScript, and React.",
-    image: "/web.webp",
+     image: "/webdesign.jpg",
     slug: "web-development",
     color: "from-green-500 to-green-700",
     size: "md:col-span-1"
   },
   {
+    title: "Data Analyst (AI Based)",
+    description: "Learn data analysis with modern tools like Excel, SQL, Power BI/Tableau, and Python. Perfect for aspiring .",
+    image: "/data.jpg",
+    slug: "addDataAnalyst",
+    color: "from-green-500 to-green-700",
+    size: "md:col-span-1"
+  },
+  {
+    title: "Graphic Design ",
+    description: "Build websites with HTML, CSS, JavaScript, and React.",
+    image: "/graphic.jpg",
+    slug: "graphic",
+    color: "from-green-500 to-green-700",
+    size: "md:col-span-1"
+  },
+  {
     title: "DCA",
-    description: "Diploma in Computer Applications with practical training.",
-    image: "/vidoe.webp",
+      description: "Master computer fundamentals, office tools, accounting, design, programming, and more in this comprehensive ADCA course.",
+
+     image: "/vidoe.webp",
     slug: "dca",
     color: "from-orange-500 to-orange-700",
     size: "md:col-span-1"
   },
   {
-    title: "Photoshop",
-    description: "Learn professional graphic design and photo editing.",
-    image: "/photoshape.webp",
-    slug: "photoshop",
+    title: "Digital Marketing",
+    description: "Learn the essentials of digital marketing including SEO, SEM, SMM, content, email marketing, and web analytics. Perfect for aspiring marketers.",
+    image: "/digital.jpg",
+    slug: "digitalmarketing",
     color: "from-pink-500 to-pink-700",
     size: "md:col-span-1"
   },
   {
-    title: "Video Editing",
-    description: "Master Premiere Pro and Filmora for video production.",
-    image: "/vidoe.webp",
-    slug: "video-editing",
-    color: "from-red-500 to-red-700",
-    size: "md:col-span-2" // Wider card
-  },
-  { 
-    title: "Animation",
-    description: "2D/3D animation using industry-standard tools.",
-    image: "/tallyprime.webp",
-    slug: "animation",
-    color: "from-indigo-500 to-indigo-700",
+    title: "Advanced Excel",
+       description: "Master advanced Excel .",
+
+     image: "/excel.jpg",
+    slug: "digitalmarketingdfskfjskfjslkjfsjdf",
+    color: "from-pink-500 to-pink-700",
     size: "md:col-span-1"
   },
+  {
+    title: "Stock Market",
+      description: "Understand how the stock market works, master trading strategies, and learn both fundamental and technical analysis. Perfect for beginners and aspiring investors.",
+
+     image: "/stock5.jpg",
+    slug: "stockmarket",
+    color: "from-pink-500 to-pink-700",
+    size: "md:col-span-1"
+  },
+  {
+    title: "AutoCAD Syllabus",
+      description: "Master 2D and basic 3D drafting using AutoCAD. Learn professional drawing, editing, layer management, and plotting techniques for real-world architectural and mechanical design.",
+
+     image: "/autc.jpg",
+    slug: "autocardcourse",
+    color: "from-pink-500 to-pink-700",
+    size: "md:col-span-1"
+  },
+  {
+    title: "Python Syllabus",
+    description: "    This Python course is ideal for beginners and aspiring developers. It covers everything from syntax and data types to object-oriented programming and popular libraries like NumPy and Pandas. By the end, students will be able to build small applications and scripts with confidence.",
+
+    image: "/phy.jpg",
+    slug: "phythonfjkfjsklfjlfsjflasf",
+    color: "from-pink-500 to-pink-700",
+    size: "md:col-span-1"
+  },
+  
+   
 ];
 
 const CoursesPage = () => {
