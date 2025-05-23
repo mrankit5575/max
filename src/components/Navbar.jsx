@@ -63,7 +63,15 @@ const Navbar = () => {
               Courses
             </NavLink>
             
-             
+             <a
+  href="https://max-portal-frontend-git-main-ankits-projects-88c25791.vercel.app/" // Replace with actual link
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hover:text-red-500 transition-colors text-white"
+>
+  Student Login
+</a>
+
               
             
             <NavLink 
@@ -196,7 +204,16 @@ const Navbar = () => {
                 Contact
               </NavLink>
 
-                
+                <a
+  href="https://max-portal-frontend-git-main-ankits-projects-88c25791.vercel.app/" // <-- Replace with actual link
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setIsOpen(false)}
+  className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-white font-medium bg-red-500"
+>
+  Student Login
+</a>
+
 
               <NavLink 
                 to="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" 
