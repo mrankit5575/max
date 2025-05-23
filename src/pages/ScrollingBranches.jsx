@@ -8,7 +8,7 @@ const branches = [
   { name: "Max Education Delhi  ", contact: "+91 95408 02050", address: "Office No-12, Maa Jwala Complex, Pocket 3, Badli, Samaypur, Delhi, 110042" },
   { name: "Max Education MukundPur Delhi", contact: "+91 9220958292", address: "Gali no-11 Radha Vihar MukundPur Delhi-110042" },
   { name: "Max Education Raja Vihar", contact: "+91 8882612961", address: "Q42M+73F, Raja Vihar, Samaypur, Delhi, 110042" },
-  { name: "Max Education MithaPur", contact: "+91 9540903903", address: "Gali no-11 Radha Vihar MukundPur Delhi-110042" },
+  { name: "Max Education MithaPur", contact: "+91 9540903903", address: "B-105 sindhu fram road meethapur exnt badarpur new Delhi -110044" },
   { name: "Max Education (Haryana)", contact: "+91 9220958292", address: "Ward No. 11, Khasra No. 14//4, near Shiv Mandir, Gaddha Colony, chhotu ram nagar, Haryana 124507" },
   { name: "Max Education Ratanpur", contact: "+91 092191 23445", address: "824P+3G7, near S.A.H Educational school, Jalil Pur, Ratanpur, Varanasi, Uttar Pradesh 221008" },
   { name: "MAX EDUCATION HUSEPUR", contact: "+91 092191 23445", address: "Adarsh Bazar, Husepur, Ghazipur, Uttar Pradesh 233001" },

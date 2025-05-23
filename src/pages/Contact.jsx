@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h3 className="text-xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
             <form 
-              action="https://formspree.io/f/mpwdeayb" 
+              action="https://formspree.io/f/mjkwdpqp" 
               method="POST"
               className="space-y-5"
             >

@@ -25,6 +25,8 @@ const courses = [
   },
   {
     title: "Web Development",
+    description: "Build websites with HTML, CSS, JavaScript, and React.",
+
      image: "/webdesign.jpg",
     slug: "web-development",
     color: "from-green-500 to-green-700",
@@ -40,7 +42,7 @@ const courses = [
   },
   {
     title: "Graphic Design ",
-    description: "Build websites with HTML, CSS, JavaScript, and React.",
+    description: "Learn professional graphic design using industry-standard tools like Photoshop, Illustrator, and Canva.",
     image: "/graphic.jpg",
     slug: "graphic",
     color: "from-green-500 to-green-700",
@@ -65,7 +67,7 @@ const courses = [
   },
   {
     title: "Advanced Excel",
-       description: "Master advanced Excel .",
+       description: "Advanced Excel with MIS Syllabus.",
 
      image: "/excel.jpg",
     slug: "digitalmarketingdfskfjskfjslkjfsjdf",
@@ -96,6 +98,16 @@ const courses = [
 
     image: "/phy.jpg",
     slug: "phythonfjkfjsklfjlfsjflasf",
+    color: "from-pink-500 to-pink-700",
+    size: "md:col-span-1"
+  },
+  {
+    title: "CCC ",
+    description: "The CCC course, offered under the National Institute of Electronics and Information",
+
+    image: "/ccc.jpg",
+     slug: "cccsyllabus",
+ 
     color: "from-pink-500 to-pink-700",
     size: "md:col-span-1"
   },

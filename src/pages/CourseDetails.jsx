@@ -11,9 +11,9 @@ const courses = [
   description: "Learn essential computer skills including Office tools, Internet, Cyber Safety, and AI basics.",
   image: "/basicimage.jpg", // replace with correct image path
   slug: "basic-computer",
-  duration: "3 Months",
+  duration: "4-5 Months",
   students: "500+",
-      link :"https://www.youtube.com/watch?v=kqFLQG484pg",
+      link :"https://drive.google.com/file/d/1twejD3D2Nt53O83OW4WBSiQRLMHUl63y/view?usp=drivesdk",
  
    certification: "Yes",
   content: `
@@ -86,10 +86,10 @@ const courses = [
   description: "Master accounting with Tally Prime, GST, inventory, payroll, and BUSY software.",
   image: "/tallybusy.jpg", // replace with your correct image path
   slug: "tally",
-  duration: "3 Months",
+  duration: "6 Months",
   students: "500+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg",
+  link: "https://drive.google.com/file/d/1u4xoD5UE4SMgPfNhEfuOdBQLpjBtlikJ/view?usp=drivesdk",
   content: `
     This course is designed to provide hands-on training in accounting using Tally Prime and BUSY software. You will learn basic accounting principles, ledger and voucher entries, inventory management, GST, TDS, reporting, payroll, and data security. By the end of this course, students will be proficient in managing accounts and generating reports for businesses.
   `,
@@ -166,10 +166,10 @@ const courses = [
   description: "Learn professional graphic design using industry-standard tools like Photoshop, Illustrator, and Canva. Build your own design portfolio with hands-on projects.",
   image: "/graphic.jpg", // Replace with your correct image path
   slug: "graphic",
-  duration: "3 Months",
+  duration: "6 Months",
   students: "500+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg",
+  link: "https://drive.google.com/file/d/1uUzfZM1odqkzd9fkH8B-ZEh3g3Wse3tj/view?usp=drivesdk",
   content: `
     This course is ideal for aspiring graphic designers. It covers the fundamental principles of design, essential tools like Adobe Photoshop and Illustrator, and skills needed to create visual content for print, web, and social media. From branding to social media design, students will develop a strong portfolio by the end of the course.
   `,
@@ -229,14 +229,14 @@ const courses = [
 },
 // adca
 {
-  title: "ADCA Syllabus – Short Version",
+  title: "ADCA Syllabus",
   description: "Master computer fundamentals, office tools, accounting, design, programming, and more in this comprehensive ADCA course.",
   image: "/adca-course.webp", // Replace with your correct image path
   slug: "dca",
-  duration: "6 Months",
+  duration: "1 Yrs",
   students: "800+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com", // Update if needed
   content: `
     This Advanced Diploma in Computer Applications (ADCA) course is designed to equip students with essential and advanced computer skills. It covers office tools, internet usage, accounting with Tally, basic graphic design, programming, databases, and cyber security. The course is ideal for students and job seekers looking to enhance their digital proficiency.
   `,
@@ -267,14 +267,14 @@ const courses = [
 },
 //digital marketing
 {
-  title: "Digital Marketing Syllabus – Short Version",
+  title: "Digital Marketing Syllabus",
   description: "Learn the essentials of digital marketing including SEO, SEM, SMM, content, email marketing, and web analytics. Perfect for aspiring marketers.",
   image: "/digital.jpg", // Replace with your correct image path
   slug: "digitalmarketing",
-  duration: "3 Months",
+  duration: "6 Months",
   students: "600+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch?", // Update if needed
   content: `
     This Digital Marketing course covers key strategies and tools to grow a business or personal brand online. From SEO and Google Ads to content and social media marketing, students gain practical experience in managing campaigns and tracking performance with web analytics tools.
   `,
@@ -345,14 +345,14 @@ const courses = [
 },
 //web design
 {
-  title: "Web Design Syllabus – Short Version",
+  title: "Web Design Syllabus ",
   description: "Master the basics of web design including HTML, CSS, JavaScript, responsive layouts, and tools like Bootstrap. Build your own fully responsive website.",
   image: "/webdesign.jpg", // Replace with your correct image path
   slug: "web-development",
-  duration: "3 Months",
+  duration: "1 Yrs",
   students: "700+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch?v", // Update if needed
   content: `
     This Web Design course is ideal for beginners who want to learn how to create and style websites. It covers foundational web technologies such as HTML, CSS, and JavaScript, along with responsive design using Bootstrap. Students will also learn about web hosting and complete a hands-on project by the end of the course.
   `,
@@ -418,11 +418,11 @@ const courses = [
 },
 //data antyst
 {
-  title: "Data Analyst (AI Based) Syllabus – Short Version",
+  title: "Data Analyst (AI Based) Syllabus ",
   description: "Learn data analysis with modern tools like Excel, SQL, Power BI/Tableau, and Python. Perfect for aspiring data analysts seeking AI-powered insights.",
   image: "/data.jpg", // Replace with your correct image path
   slug: "addDataAnalyst",
-  duration: "3 Months",
+  duration: "1 Yrs",
   students: "500+",
   certification: "Yes",
   link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
@@ -483,14 +483,14 @@ const courses = [
 },
 //adavaned excel 
 {
-  title: "Advanced Excel with MIS Syllabus – Short Version",
+  title: "Advanced Excel with MIS Syllabus ",
   description: "Master advanced Excel functions, MIS reporting, and automation with Power Query, VBA, and dashboards. Ideal for professionals aiming to enhance data-driven decision-making.",
   image: "/excel.jpg", // Replace with your correct image path
   slug: "digitalmarketingdfskfjskfjslkjfsjdf",
-  duration: "2.5 Months",
+  duration: "3 Months",
   students: "600+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch", // Update if needed
   content: `
     This course provides in-depth training on Advanced Excel techniques, data analysis, and MIS (Management Information Systems) reporting. Learn powerful formulas, pivot tables, automation with VBA, Power Query, and dashboard creation. Ideal for data professionals, analysts, and decision-makers in business environments.
   `,
@@ -566,10 +566,10 @@ const courses = [
   description: "Understand how the stock market works, master trading strategies, and learn both fundamental and technical analysis. Perfect for beginners and aspiring investors.",
   image: "/stock5.jpg", // Replace with your correct image path
   slug: "stockmarket",
-  duration: "2 Months",
+  duration: "6 Months",
   students: "400+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch?v", // Update if needed
   content: `
     This Stock Market course offers a practical foundation for anyone interested in stock trading and investments. Students learn the fundamentals of markets, how to read charts, apply investment strategies, and trade using popular platforms like Zerodha or Upstox. It covers both technical and fundamental analysis, risk management, and the regulatory landscape.
   `,
@@ -651,10 +651,10 @@ const courses = [
   description: "Master 2D and basic 3D drafting using AutoCAD. Learn professional drawing, editing, layer management, and plotting techniques for real-world architectural and mechanical design.",
   image: "/autc.jpg", // Replace with your correct image path
   slug: "autocardcourse",
-  duration: "2 Months",
+  duration: "1 Yrs",
   students: "300+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch?v", // Update if needed
   content: `
     This AutoCAD course offers comprehensive training in both 2D and basic 3D drafting. Perfect for civil, mechanical, and architectural fields, students will learn professional drawing, layer control, annotations, and printing techniques through hands-on projects and practical exercises.
   `,
@@ -736,10 +736,10 @@ const courses = [
   description: "Learn Python programming from scratch. This beginner-friendly course covers core concepts, data structures, file handling, and basic OOP, with hands-on projects and practical examples.",
   image: "/phy.jpg", // Replace with your correct image path
   slug: "phythonfjkfjsklfjlfsjflasf",
-  duration: "2 Months",
+  duration: "6 Months",
   students: "500+",
   certification: "Yes",
-  link: "https://www.youtube.com/watch?v=kqFLQG484pg", // Update if needed
+  link: "https://www.youtube.com/watch?", // Update if needed
   content: `
     This Python course is ideal for beginners and aspiring developers. It covers everything from syntax and data types to object-oriented programming and popular libraries like NumPy and Pandas. By the end, students will be able to build small applications and scripts with confidence.
   `,
@@ -821,7 +821,91 @@ const courses = [
       ]
     }
   ]
+},
+//ccc
+{
+  title: "CCC Syllabus",
+  description: "Learn essential computer skills including Office tools, Internet, Cyber Safety, and AI basics.",
+  image: "/ccc.jpg", // replace with correct image path
+  // slug: "cccsyllabus/jdsdfjskldjfklsddjflkdsjfklsdjfklsjdfklsdjfkls",
+  duration: "6 Months",
+    slug: "cccsyllabus",
+
+  students: "500+",
+  link: "https://drive.google.com/file/",
+  certification: "Yes",
+  content: `
+    This course offers a complete introduction to computers and their everyday use. You'll explore hardware and software basics, work with Windows or Linux, and learn office applications like Word, Excel, and PowerPoint. The course also includes internet use, email, cyber safety, digital financial literacy, and printing/scanning techniques.
+  `,
+  topics: [
+    {
+      heading: "1. Introduction to Computers",
+      points: [
+        "Basics of hardware and software",
+        "Input/output devices",
+        "Types of computers"
+      ]
+    },
+    {
+      heading: "2. Operating System Basics",
+      points: [
+        "Windows/Linux interface",
+        "File and folder management"
+      ]
+    },
+    {
+      heading: "3. Word Processing (MS Word or LibreOffice Writer)",
+      points: [
+        "Creating, editing, formatting documents",
+        "Tables, images, and printing"
+      ]
+    },
+    {
+      heading: "4. Spreadsheets (MS Excel or LibreOffice Calc)",
+      points: [
+        "Formulas and functions",
+        "Creating charts and tables"
+      ]
+    },
+    {
+      heading: "5. Presentations (MS PowerPoint or LibreOffice Impress)",
+      points: [
+        "Creating slides, using themes",
+        "Transitions and animations"
+      ]
+    },
+    {
+      heading: "6. Internet and Web Browsing",
+      points: [
+        "Using browsers (Chrome, Firefox)",
+        "Searching information online"
+      ]
+    },
+    {
+      heading: "7. Email",
+      points: [
+        "Creating and using email accounts",
+        "Sending attachments and managing inbox"
+      ]
+    },
+    {
+      heading: "8. Digital Financial Literacy",
+      points: [
+        "Online banking and UPI basics",
+        "Mobile wallets and secure transactions"
+      ]
+    },
+    {
+      heading: "9. Cyber Security & IT Awareness",
+      points: [
+        "Safe internet practices",
+        "Protecting personal data and passwords"
+      ]
+    }
+  ]
 }
+
+
 
 
   // ... other courses with added details
@@ -870,15 +954,15 @@ const CourseDetails = () => {
               {/* Course Stats */}
               <div className="mt-6 grid grid-cols-3 gap-4">
                 <div className="flex items-center">
-                  <FaClock className="text-gray-400 mr-2" />
-                  <span className="text-sm text-gray-600">{course.duration}</span>
+                  <FaClock className="text-[#0C0950] mr-2" />
+                  <span className="text-sm text-green-600">{course.duration}</span>
                 </div>
                 <div className="flex items-center">
-                  <FaUserGraduate className="text-gray-400 mr-2" />
-                  <span className="text-sm text-gray-600">{course.students}</span>
+                  <FaUserGraduate className="text-[#0C0950] mr-2" />
+                  <span className="text-sm text-red-600">{course.students}</span>
                 </div>
                 <div className="flex items-center">
-                  <FaCertificate className="text-gray-400 mr-2" />
+                  <FaCertificate className="text-green-600 mr-2" />
                   <span className="text-sm text-gray-600">{course.certification}</span>
                 </div>
               </div>
@@ -897,7 +981,7 @@ const CourseDetails = () => {
                   href={course.link} 
                   className="w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#0C0950] hover:bg-red-500 transition-all duration-300"
                 >
-                  Material
+                  Course Content
                 </a>
               </div>
                

@@ -18,11 +18,11 @@ const branches = [
       "/delhi3.jpg",
       "/delhi2.webp",
     ],
-    location: " Office No-12, Maa Jwala Complex, Pocket 3, Badli, Samaypur, Delhi, 110042",
+    location: " Office No-12, Maa Jwala Complex, Pocket 3,Samaypur, Badli,  Delhi, 110042",
     contact: "+91 95408 02050",
     email: "maxcomputer09@gmail.com",
     hours: "Mon-Sat: 7:00 AM - 9:00 PM",
-    mapLink: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
+    mapLink: "https://www.google.com/maps?client=ms-android-realme-terr1-rso2&sca_esv=858f709184f236a4&hl=en-GB&cs=0&sxsrf=AHTn8zrff0e-QUggV4GszlDKKX_jwhoXoA:1747979485606&kgmid=/g/11c54c0klm&shndl=30&shem=lstuoe2&kgs=9e0967b73a023402&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRvCTkALAQ05MRnwLfrN5Tt8&daddr=Office+No-12,+Maa+Jwala+Complex,+Pocket+3,+Badli,+Samaypur,+Delhi,+110042"
   },
   {
     name: "Max Education MukundPur Delhi",
@@ -51,13 +51,13 @@ const branches = [
     mapLink: "https://www.google.com/maps/dir/28.743044,77.1818607/Q42M%2B73F,+Raja+Vihar,+Samaypur,+Delhi,+110042/@28.7500684,77.132781,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x390d010016dcfadf:0x7c484afda88e43f5!2m2!1d77.1326606!2d28.7506759!6m3!1i0!2i2!3i4?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D "
   },
   {
-    name: "Max Education MithaPur",
+    name: "Max Education MeethaPur",
     images: [
        "/new.jpg",
       "/new1.jpg",
       "/new2.jpg",
     ],
-    location: "Gali no-11 Radha Vihar MukundPur Delhi-110042 ",
+    location: "B-105 sindhu fram road meethapur exnt badarpur new Delhi -110044 ",
     contact: "+91 9540903903",
     email: "pankajku9354@gmail.com",
     hours: "Mon-Sat: 7:00 AM - 9:00 PM",

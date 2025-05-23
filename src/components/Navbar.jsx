@@ -23,8 +23,8 @@ const Navbar = () => {
             }
             aria-label="Home"
           >
-            <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4" />
-            <p>MAX EDUCATION</p>
+            <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4 " />
+            <p className="lg:text-3xl sm:text-2xl text-white">MAX EDUCATION</p>
           </NavLink>
 
           {/* Desktop Links */}
@@ -32,7 +32,7 @@ const Navbar = () => {
             <NavLink 
               to="/" 
               className={({ isActive }) => 
-                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
+                `hover:text-white transition-colors ${isActive ? activeClass : "text-white"}`
               }
             >
               Home

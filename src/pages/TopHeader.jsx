@@ -39,7 +39,7 @@ const TopHeader = () => {
             <div className="flex items-center group">
               <a href='https://www.google.com/maps?q=28.7428794,77.1819009' target='_blank'> <FaMapMarkerAlt className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
 </a>
-               <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">MukundPur, Delhi</span>
+               <span className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]"> Delhi</span>
             </div>
             <div className="flex items-center group">
               <FaEnvelope className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />

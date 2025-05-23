@@ -92,6 +92,17 @@ const courses = [
     color: "from-pink-500 to-pink-700",
     size: "md:col-span-1"
   },
+  {
+    title: "CCC",
+    description: "CCC Syllabus",
+
+    image: "/ccc.jpg",
+        slug: "cccsyllabus",
+
+    // slug: "cccsyllabus",
+    color: "from-pink-500 to-pink-700",
+    size: "md:col-span-1"
+  },
   
    
 ];
