@@ -22,10 +22,14 @@ import BatchManager from './pages/BatchManager';
 import ScrollToTop from './components/ScrollToTop';  // Import ScrollToTop
 import CourseMaterial from './pages/CourseMaterials';
 import StudentManager from './pages/StudentManager';
+import ErrorBoundary from './Error/ErrorBoundary';
 
 function App() {
   return (
+    <ErrorBoundary>
+
     <Router>
+      
       <ScrollToTop /> {/* This will handle scroll reset on route change */}
       <div className="flex flex-col min-h-screen">
         <TopHeader />
@@ -57,6 +61,8 @@ function App() {
         <Footer />
       </div>
     </Router>
+        </ErrorBoundary>
+
   );
 }
 

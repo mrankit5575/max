@@ -274,7 +274,7 @@ export default function Home() {
         <ScrollingBranches/>
         <Features />
         <FeatureCards/>
-        <StudentDetails/>
+        {/* <StudentDetails/> */}
         <AboutSection/>
         <CoursesPage />
         <DiceAdvantage/>
