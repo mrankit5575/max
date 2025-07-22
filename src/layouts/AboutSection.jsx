@@ -282,7 +282,7 @@ export default function AboutSection() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
-              One of Delhi's premier academic institutions, <strong className="text-blue-600">MAX Education</strong> was established in 2005 and registered under the Government of India. We are a professionally managed center with a proven track record of providing quality education.
+              One of Delhi's premier academic institutions, <strong className="text-blue-600">MAX INFOTECH</strong> was established in 2005 and registered under the Government of India. We are a professionally managed center with a proven track record of providing quality education.
             </motion.p>
 
             <motion.div

@@ -345,7 +345,7 @@ You can also check our   for more info.`;
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Why Choose <span className="text-blue-600">MAX Education</span>?
+            Why Choose <span className="text-blue-600">MAX INFOTECH</span>?
           </h2>
           
           <motion.div

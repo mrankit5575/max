@@ -1,6 +1,6 @@
  import { useState } from "react";
 import { NavLink } from "react-router-dom"; // Changed from Link to NavLink
-import mx from '/mx-2.png'; //last edit ye hia 
+import mx from '/logo.jpg'; //last edit ye hia 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +23,8 @@ const Navbar = () => {
             }
             aria-label="Home"
           >
-            <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4 " />
-            <p className="lg:text-3xl sm:text-2xl text-white">MAX EDUCATION</p>
+            <img src={mx} alt="FindMyTutor Logo" className="h-12 md:h-16 lg:h-15 w-auto object-contain mr-4 rounded-full  " />
+            <p className="lg:text-3xl sm:text-2xl text-white">MAX INFOTECH</p>
           </NavLink>
 
           {/* Desktop Links */}
@@ -38,22 +38,22 @@ const Navbar = () => {
               Home
             </NavLink>
             
-            <NavLink 
+            {/* <NavLink 
               to="/branches" 
               className={({ isActive }) => 
                 `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
               }
             >
               Our Centers
-            </NavLink>
-            <NavLink 
+            </NavLink> */}
+            {/* <NavLink 
               to= "/upcomming" 
               className={({ isActive }) => 
                 `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
               }
             >
               Batch
-            </NavLink>
+            </NavLink> */}
             <NavLink 
               to="/courses" 
               className={({ isActive }) => 

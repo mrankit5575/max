@@ -256,11 +256,11 @@ export default function DiceAdvantage() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-            The <span className="text-red-600">MAX EDUCATION ADVANTAGE</span>
+            The <span className="text-red-600">MAX INFOTECH ADVANTAGE</span>
           </h2>
           <div className="w-20 h-1 bg-red-600 mx-auto mb-4 rounded-full"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Why should you enroll in a course at MAX EDUCATION ? Here's what makes us different.
+            Why should you enroll in a course at MAX INFOTECH  ? Here's what makes us different.
           </p>
         </div>
 

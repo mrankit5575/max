@@ -222,7 +222,7 @@ const AboutUsSection = () => {
               transition={{ delay: 0.4 }}
               viewport={{ once: true }}
             >
-              Learn & Grow <span className="text-white">Your</span> Skills From <span className="text-red-600">MAX Education</span>
+              Learn & Grow <span className="text-white">Your</span> Skills From <span className="text-red-600">MAX INFOTECH</span>
             </motion.h2>
 
             <motion.div

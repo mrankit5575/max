@@ -76,7 +76,7 @@ export default function Footer() {
               <p className="flex items-center"><FaWhatsapp className="text-green-500 mr-2" /> <span>93153 22573</span></p>
               <p>Placements: 93153 22573</p>
               <p>Batch: +91 93153 22573</p>
-              <p>maxknock90@gmail.com</p>
+              <p>maxinfotech9@gmail.com</p>
             </div>
 
             <div className="flex flex-col space-y-3 pt-2">
@@ -102,12 +102,7 @@ export default function Footer() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
             {[
-              {
-                title: "Max Education Delhi",
-                address: "Office No-12, Maa Jwala Complex, Pocket 3, Badli, Samaypur, Delhi, 110042",
-                landmark: "(Landmark: Triveni Shopping Complex)",
-                maps: "https://www.google.com/maps?client=ms-android-realme-terr1-rso2&sca_esv=858f709184f236a4&hl=en-GB&cs=0&sxsrf=AHTn8zrff0e-QUggV4GszlDKKX_jwhoXoA:1747979485606&kgmid=/g/11c54c0klm&shndl=30&shem=lstuoe2&kgs=9e0967b73a023402&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRvCTkALAQ05MRnwLfrN5Tt8&daddr=Office+No-12,+Maa+Jwala+Complex,+Pocket+3,+Badli,+Samaypur,+Delhi,+110042"
-              },
+               
               {
                 title: "Max Education MukundPur Delhi",
                 address: "Gali no-11 Radha Vihar MukundPur Delhi-110042",
@@ -120,30 +115,8 @@ export default function Footer() {
                 landmark: "(Landmark: SBI, Nirman Vihar)",
                 maps: "https://www.google.com/maps/dir/28.743044,77.1818607/Q42M%2B73F,+Raja+Vihar,+Samaypur,+Delhi,+110042/@28.7500684,77.132781,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x390d010016dcfadf:0x7c484afda88e43f5!2m2!1d77.1326606!2d28.7506759!6m3!1i0!2i2!3i4?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
               },
-              {
-                title: "Max Education MeethaPur",
-                address: "B-105 sindhu fram road meethapur exnt badarpur new Delhi -110044",
-                landmark: "",
-                maps: "https://www.google.com/maps/place/28%C2%B029'15.9%22N+77%C2%B019'08.8%22E/@28.48775,77.3165318,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.48775!4d77.3191067?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
-              },
-              {
-                title: "Max Education (Haryana)",
-                address: "Ward No. 11, Khasra No. 14//4, near Shiv Mandir, Gaddha Colony, Haryana 124507",
-                landmark: "",
-                maps: "https://www.google.com/maps/dir//Ward+No.+11,+Khasra+No.+14%2F%2F4,+near+Shiv+Mandir,+Gaddha+Colony,+chhotu+ram+nagar,+Haryana+124507/@28.6976108,76.8791385,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x390d090009295467:0xf2ea0214645698cf!2m2!1d76.9615399!2d28.6976358?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
-              },
-              {
-                title: "Max Education Ratanpur",
-                address: "824P+3G7, near S.A.H Educational school, Jalil Pur, Ratanpur, Varanasi, UP 221008",
-                landmark: "",
-                maps: "https://www.google.com/maps?client=ms-android-realme-terr1-rso2&sca_esv=8bb619a2aead404d&hl=en-GB&cs=0&sxsrf=AHTn8zo_SyU3Eo8ejDTE1y4uQVuPzPZsrA:1747730526311&kgmid=/g/11tswsbz58&shndl=30&shem=lstuoe2&kgs=78f6b2c256f3e4a8&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KaUH0DX2MY45MWydUU_w4NsR&daddr=824P%2B3G7,+near+S.A.H+Educational+school,+Jalil+Pur,+Ratanpur,+Varanasi,+Uttar+Pradesh+221008"
-              },
-              {
-                title: "MAX EDUCATION HUSEPUR",
-                address: "Adarsh Bazar, Husepur, Ghazipur, Uttar Pradesh 233001",
-                landmark: "",
-                maps: "https://www.google.com/maps/dir//Adarsh+Bazar,+Husepur,+Ghazipur,+Uttar+Pradesh+233001/@25.5481241,83.4428785,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3991ff8594a9503d:0x4123bdab182ee52a!2m2!1d83.5252849!2d25.548157?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
-              },
+               
+                
             ].map((location, index) => (
               <div key={index} className="space-y-2">
                 <h3 className="text-white font-medium">{location.title}</h3>

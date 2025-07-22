@@ -16,16 +16,14 @@ import AboutSection from "../layouts/AboutSection";
 import AnnouncementBanner from "../layouts/AnnouncementBanner";
 import Gallery from "../components/Photo";
 import Branches from "../layouts/Branches";
-import TeacherSection from "../layouts/TeacherSection";
+// import TeacherSection from "../layouts/TeacherSection";
 import CareerBenefits from "./CareerBenefits";
 // import UpcomingBatches from "./UpcomingBatches";
 import DiceAdvantage from "./DiceAdvantage";
 import BatchList from "./UpcomingBatches";
-import ScrollingBranches from "./ScrollingBranches";
-import StudentDetails from "./StudentDetails";
-import CourseSlider from "./CourseScroller";
+ import CourseSlider from "./CourseScroller";
  // import ChatBot from "../layouts/ChetBoat";
-
+  
 const changingTexts = [
   "Learn computer skills, web development, digital marketing, Tally, and more — only at Max Education.",
   "Max Education offers industry-ready computer courses with practical training and expert guidance.",
@@ -124,7 +122,7 @@ export default function Home() {
                       className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight"
                     >
                       <span className="block">Master Your Skills with </span>
-                      <span className="block text-red-500 ">Max Education</span>
+                      <span className="block text-red-500 ">Max Infotech</span>
                     </motion.h1>
                   )}
                 </AnimatePresence>
@@ -271,21 +269,20 @@ export default function Home() {
         </section>
 
         {/* Other Sections */}
-        <ScrollingBranches/>
-        <Features />
+         <Features />
         <FeatureCards/>
         {/* <StudentDetails/> */}
         <AboutSection/>
         <CoursesPage />
         <DiceAdvantage/>
         <AboutUsSection/>
-        <Branches/>
-        <TeacherSection/>
+        {/* <Branches/> */}
+        {/* <TeacherSection/> */}
          <Testimonials />
          {/* <UpcomingBatches/> */}
-         <BatchList/>
+         {/* <BatchList/> */}
         <Gallery/>
-        <BannerWithAnimation/>
+        {/* <BannerWithAnimation/> */}
         <CareerBenefits/>
          <InstagramGallery/>
         {/* <CourseScroller/> */}

@@ -21,7 +21,7 @@ const testimonials = [
     title: "Telly Aspirant",
     feedback:
       "24/7 availability and verified experts made my prep stress-free. Highly recommend for test prep!",
-    image: "/crop1.png",
+    image: "/",
   }
 ];
 

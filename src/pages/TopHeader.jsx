@@ -44,7 +44,7 @@ const TopHeader = () => {
             <div className="flex items-center group">
               <FaEnvelope className="text-white mr-3 transition-transform group-hover:scale-110 text-lg" />
               <a href="mailto:maxknock90@gmail.com" className="group-hover:text-gray-200 transition-colors text-[15px] md:text-[16px]">
-  maxknock90@gmail.com
+  maxinfotech9@gmail.com
 </a>
 
              </div>
