@@ -155,7 +155,7 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-              <NavLink 
+              {/* <NavLink 
                 to="/branches" 
                 className={({ isActive }) => 
                   `block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors ${isActive ? mobileActiveClass : "text-[#0C2950] font-medium"}`
@@ -163,7 +163,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Our Center  
-              </NavLink>
+              </NavLink> */}
 
               <NavLink 
                 to="/courses" 
