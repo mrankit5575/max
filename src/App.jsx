@@ -45,8 +45,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Contact />} />
             <Route path="/loginABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghidfgdfgdfgdgdfdfskasnfkjsjfifjfknfa8fjnfjfnfofdff1f54515f981f75f14ff84f1f8f4dfkjfiofuljjklmnopqrstuvwxyz0123456789" element={<LoginForm />} />
-            <Route path="/photo" element={<Gallery />} />
-            <Route path="/branches" element={<Branches />} />
+            {/* <Route path="/photo" element={<Gallery />} /> */}
+            {/* <Route path="/branches" element={<Branches />} /> */}
             <Route path="/upcomming" element={<UpcomingBatches />} />
             <Route path="/teacher" element={<TeacherSection />} />
             <Route path="/feedback" element={<Testimonials />} />

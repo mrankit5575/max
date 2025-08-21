@@ -272,7 +272,7 @@ export default function Home() {
          <Features />
         <FeatureCards/>
         {/* <StudentDetails/> */}
-        <AboutSection/>
+        {/* <AboutSection/> */}
         <CoursesPage />
         <DiceAdvantage/>
         <AboutUsSection/>
