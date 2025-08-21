@@ -63,25 +63,10 @@ const Navbar = () => {
               Courses
             </NavLink>
             
-             <a
-  href="https://max-portal-frontend-git-main-ankits-projects-88c25791.vercel.app/" // Replace with actual link
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hover:text-red-500 transition-colors text-white"
->
-  Student Login
-</a>
-
+    
               
             
-            <NavLink 
-              to="/photo" 
-              className={({ isActive }) => 
-                `hover:text-red-500 transition-colors ${isActive ? activeClass : "text-white"}`
-              }
-            >
-              Gallery
-            </NavLink>
+             
             <NavLink 
               to="/coursematerial" 
               className={({ isActive }) => 

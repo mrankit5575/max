@@ -26,7 +26,7 @@ import BatchList from "./UpcomingBatches";
   
 const changingTexts = [
   "Learn computer skills, web development, digital marketing, Tally, and more — only at Max Education.",
-  "Max Education offers industry-ready computer courses with practical training and expert guidance.",
+  "MAX INFOTECH offers industry-ready computer courses with practical training and expert guidance.",
   "Explore our wide range of computer courses designed to make you job-ready in today's digital world."
  ];
 
@@ -281,10 +281,10 @@ export default function Home() {
          <Testimonials />
          {/* <UpcomingBatches/> */}
          {/* <BatchList/> */}
-        <Gallery/>
+        {/* <Gallery/> */}
         {/* <BannerWithAnimation/> */}
         <CareerBenefits/>
-         <InstagramGallery/>
+         {/* <InstagramGallery/> */}
         {/* <CourseScroller/> */}
         <CourseSlider/>
          

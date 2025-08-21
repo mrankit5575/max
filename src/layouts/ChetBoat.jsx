@@ -8,7 +8,7 @@ const getBotReply = (message) => {
   } else if (/fee|fees|payment|price|cost|charges|how much|amount|budget|expensive|cheap|afford/.test(message)) {
     return "Course fees vary depending on duration and content:\n\n- Short courses (1-3 months): ₹3,000 - ₹8,000\n- Diploma courses (6-12 months): ₹10,000 - ₹25,000\n\nWe also offer installment options and discounts for early payment. Would you like to know about a specific course's fee?";
   } else if (/contact|reach|call|phone|number|mobile|address|location|where|visit|meet|talk|speak/.test(message)) {
-    return "You can contact us through:\n\n📞 Phone: +91-9876543210 / +91-9876543211\n📧 Email: info@example.com\n🏢 Address: 123 Education Street, Learning City, 560001\n\nOur office hours are 9AM-6PM, Monday to Saturday.";
+    return "You can contact us through:\n\n📞 Phone:  93153 22573\n📧 Email: maxknock90@gmail.com\n🏢 Address: 123 Education Street, Learning City, 560001\n\nOur office hours are 9AM-6PM, Monday to Saturday.";
   } else if (/certificate|certification|completion|document|proof|award|recognized|valid|after course|finish/.test(message)) {
     return "After successfully completing your course:\n\n1. You'll receive a digital certificate immediately\n2. Hard copy can be collected from office\n3. Certificate is recognized by NSDC\n4. Contains unique verification code\n\nCertificates are awarded after:\n- Completing all assignments\n- Minimum 75% attendance\n- Passing final assessment";
   } else if (/time|timing|schedule|duration|when|hour|days|long|start|end|morning|evening/.test(message)) {
