@@ -12,7 +12,8 @@ export default function Footer() {
           {/* Brand Info */}
           <div className="space-y-4">
             <div>
-              <h1 className="text-2xl font-bold text-white mb-1">MAX EDUCATION</h1>
+              <h1 className="text-2xl font-bold text-white mb-1">MAX INFOTECH
+</h1>
               <p className="text-gray-400 text-sm">Developer! -    <a href="https://www.instagram.com/viranshusingh055/" target="_blank">Ankit Singh</a><br />ankitroy5575@gmail.com</p>
               <p className="text-gray-400 text-sm"><a href="https://www.avdevelopment.in/" target="_blank">avdevelopment Private Limited</a><br /></p>
             </div>
@@ -104,13 +105,13 @@ export default function Footer() {
             {[
                
               {
-                title: "Max Education MukundPur Delhi",
+                title: "MAX INFOTECH MukundPur Delhi",
                 address: "Gali no-11 Radha Vihar MukundPur Delhi-110042",
                 landmark: "(Machli Market Radha Vihar)",
                 maps: "https://www.google.com/maps/place/28%C2%B044'34.4%22N+77%C2%B010'54.8%22E/@28.7428794,77.179326,17z/data=!3m1!4b1!4m4!3m3!8m2!3d28.7428794!4d77.1819009?entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
               },
               {
-                title: "Max Education Raja Viha",
+                title: " MAX INFOTECH Raja Viha",
                 address: "Q42M+73F, Raja Vihar, Samaypur, Delhi, 110042",
                 landmark: "(Landmark: SBI, Nirman Vihar)",
                 maps: "https://www.google.com/maps/dir/28.743044,77.1818607/Q42M%2B73F,+Raja+Vihar,+Samaypur,+Delhi,+110042/@28.7500684,77.132781,17z/am=t/data=!4m13!4m12!1m1!4e1!1m5!1m1!1s0x390d010016dcfadf:0x7c484afda88e43f5!2m2!1d77.1326606!2d28.7506759!6m3!1i0!2i2!3i4?hl=en-GB&entry=ttu&g_ep=EgoyMDI1MDUxNS4wIKXMDSoASAFQAw%3D%3D"
