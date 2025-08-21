@@ -134,7 +134,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
-          <p>© {new Date().getFullYear()} MAX EDUCATION. All Rights Reserved.</p>
+          <p>© {new Date().getFullYear()} MAX INFOTECH. All Rights Reserved.</p>
           <p className="mt-1">Developed by <span className="text-white font-semibold">Ankit Singh</span> | WhatsApp: <a href="https://wa.me/919718659236" className="text-green-400 hover:text-green-300">9718659236</a></p>
           {/* <p className="mt-1">social <span className="text-white font-semibold">Ankit Singh</span> | WhatsApp: <a href="https://wa.me/919718659236" className="text-green-400 hover:text-green-300">9718659236</a></p> */}
           <div className="flex justify-center space-x-4 mt-2">
