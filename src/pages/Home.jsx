@@ -275,7 +275,7 @@ export default function Home() {
         {/* <AboutSection/> */}
         <CoursesPage />
         <DiceAdvantage/>
-        <AboutUsSection/>
+        {/* <AboutUsSection/> */}
         {/* <Branches/> */}
         {/* <TeacherSection/> */}
          <Testimonials />
