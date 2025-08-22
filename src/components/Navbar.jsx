@@ -181,15 +181,7 @@ const Navbar = () => {
                 Contact
               </NavLink>
 
-                <a
-  href="https://max-portal-frontend-git-main-ankits-projects-88c25791.vercel.app/" // <-- Replace with actual link
-  target="_blank"
-  rel="noopener noreferrer"
-  onClick={() => setIsOpen(false)}
-  className="block px-3 py-2 rounded-md hover:bg-[#0C2950]/10 transition-colors text-white font-medium bg-red-500"
->
-  Student Login
-</a>
+                
 
 
               <NavLink 
