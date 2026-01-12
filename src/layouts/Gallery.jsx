@@ -3,12 +3,12 @@ import { FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const photos = [
-  "/30.jpg",
-  "/31.jpg",
-  "/img1.jpg",
-  "/33.jpg",
-  "/34.jpg",
-  "/35.jpg",
+  "/img.jpeg",
+  "/img2.jpeg",
+  "/img3.jpeg",
+  "/img4.jpeg",
+  "/img5.jpeg",
+  "/img6.jpeg",
    
 ]; 
 // Replace with your actual image URLs

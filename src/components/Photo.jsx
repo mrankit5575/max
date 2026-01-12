@@ -7,7 +7,13 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const allPhotos = [
-    "/img1.jpg", "/img21.jpg", "/img23.jpg", "/img2.jpg",
+    // "/img1.jpg", "/img21.jpg", "/img23.jpg", "/img2.jpg",
+    "/img.jpeg",
+  "/img2.jpeg",
+  "/img3.jpeg",
+  "/img4.jpeg",
+  "/img5.jpeg",
+  "/img6.jpeg",
     "/img5.jpg", "/img6.jpg", "/img7.jpg", "/img8.jpg",
     "/img9.jpg", "/img10.jpg", "/img11.jpg", "/img20.jpg"
   ];

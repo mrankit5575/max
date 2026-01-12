@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
  import Counter from "../components/Counter";
-import img from "../assets/hero3.jpg";
+import img from "/img2.jpeg";
 import { Link } from "react-router-dom";
 import Features from "../components/Features";
 // import Categories from "../components/Categories"; ;last edit 2025`
@@ -281,7 +281,7 @@ export default function Home() {
          <Testimonials />
          {/* <UpcomingBatches/> */}
          {/* <BatchList/> */}
-        {/* <Gallery/> */}
+        <Gallery/>
         {/* <BannerWithAnimation/> */}
         <CareerBenefits/>
          {/* <InstagramGallery/> */}

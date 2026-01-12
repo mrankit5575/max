@@ -1,6 +1,6 @@
  import { useState } from "react";
 import { NavLink } from "react-router-dom"; // Changed from Link to NavLink
-import mx from '/logo.jpg'; //last edit ye hia 
+import mx from '/logo.jpeg'; //last edit ye hia 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

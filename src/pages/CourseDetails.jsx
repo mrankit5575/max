@@ -977,12 +977,7 @@ const CourseDetails = () => {
                 </a>
               </div>
               <div className="mt-8">
-                <a 
-                  href={course.link} 
-                  className="w-full flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-[#0C0950] hover:bg-red-500 transition-all duration-300"
-                >
-                  Course Content
-                </a>
+                 
               </div>
                
     
